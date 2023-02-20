@@ -1,0 +1,6 @@
+**/.env
+**/*.BAK
+**/*.bak
+**/.DS_Store
+**/*~
+src/dataref

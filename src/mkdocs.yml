@@ -1,0 +1,10 @@
+site_name: Break Through Cancer Data Reference 
+nav:
+    - '  ': index.md
+    - FAQ:  faq.md
+
+docs_dir: content
+site_dir: dataref
+
+extra_css:
+    - extra.css

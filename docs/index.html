@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Break Through Cancer Data Reference</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+        <link href="extra.css" rel="stylesheet">
+
+        <script src="js/jquery-1.10.2.min.js" defer></script>
+        <script src="js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body class="homepage">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href=".">Break Through Cancer Data Reference</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem active">
+                                <a href="." class="nav-link">  </a>
+                            </li>
+                            <li class="navitem">
+                                <a href="faq/" class="nav-link">FAQ</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" class="nav-link disabled">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="faq/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#purpose" class="nav-link">Purpose</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#data-life-cycle" class="nav-link">Data Life Cycle</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#staging-area" class="nav-link">Staging Area</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#submitting-and-tracking" class="nav-link">Submitting and Tracking</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#data-lake" class="nav-link">Data Lake</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#warehouse" class="nav-link">Warehouse</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#analysis-and-pipelines" class="nav-link">Analysis and Pipelines</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#btc-identifier-scheme" class="nav-link">BTC Identifier Scheme</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#data-entities-and-levels" class="nav-link">Data Entities and Levels</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#clinical-data-levels-tiers" class="nav-link">Clinical Data Levels (Tiers)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#omic-data-levels" class="nav-link">Omic Data Levels</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#external-data" class="nav-link">External Data</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#version-050" class="nav-link">Version 0.50</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="purpose">Purpose</h1>
+<p>The aim of this document is to serve as the definitive reference for data handling in Break Through Cancer (BTC), establishing the consensus rubric under which data are identified, categorized, generated, aggregated, accessed, and governed.  This includes metadata capture during patient enrollment and sample acquisition, standards and processes for molecular assay data generation and pipelines, data flow diagrams providing simplified views, as well as a FAQ for common questions.</p>
+<p>This is pursued in concert with BTC Disease TeamLabs, and falls within the purview of the larger <strong>Data Science TeamLab (DST)</strong>. The system and infrastructure which serves as the convergence point for data science activity within BTC is code-named <strong>DASH</strong>, short for <strong>DA</strong>ta <strong>S</strong>cience <strong>H</strong>ub.  The practice of data science in BTC is informed by numerous standards, including <a href="https://www.go-fair.org/fair-principles/">F.A.I.R. practice</a> and <a href="https://sharing.nih.gov/data-management-and-sharing-policy/sharing-scientific-data/selecting-a-data-repository">NIH guidelines</a>, and draws heavily from lessons learned and software developed in earlier and sister projects, including <a href="http://cancergenome.nih.gov">TCGA</a>, <a href="https://gdc.cancer.gov">GDC</a>, and <a href="https://data.humantumoratlas.org">HTAN</a>.</p>
+<h2 id="data-life-cycle">Data Life Cycle</h2>
+<hr />
+<p>The general flow of data within BTC is as follows:
+<img alt="data-life-cycle" src="img/data-life-cycle.png" /></p>
+<p>It is helpful to distinguish that the BTC data ecosystem has <strong>2 layers of context:</strong> the first encompasses institutional and especially clinical trial activity, the other encompasses data activity vis-a-vis <strong>DASH</strong> proper.</p>
+<ul>
+<li>
+<p><strong>Layer 1</strong>:  Institutions conduct clinical trials and collect sample data in their own systems, per their current practice. This originating data will have trial-specific IDs &amp; categorizations relevant in the context of that trial or institution. And is where PHI is maintained; <strong><em>such PHI will be removed prior to ingest to BTC.</em></strong></p>
+</li>
+<li>
+<p><strong>Layer 2:</strong>  BTC will assign BTC-specific IDs when data are ingested into DASH.  The BTC nomenclature and IDs supplement those of the 
+institution and trial, rather than replace.  The mapping between BTC and trial IDs will be retained internally by BTC, and is important provenance to prevent orphaning (see below).</p>
+</li>
+</ul>
+<h2 id="staging-area">Staging Area</h2>
+<hr />
+<p>The staging area is an abstraction that serves as the entryway into DASH: staging of data generated within a disease TeamLab signifies that 
+it is ready to be freely shared amongst other members of the team without encumbrance.  This can be done in one of two ways:  <strong>first</strong>, to 
+simplify and expedite immediate data sharing by using existing drag-n-drop infrastructure wherever possible, small images, figures and documents 
+(including pre-clinical) can be deposited directly to the <strong>Data</strong> folder within the team's respective SharePoint area; <strong>second</strong>, larger data,
+such as the molecular results of DNA or scRNA sequencing assays, should be uploaded to data lake cloud storage.  To aid clarity and automation,
+we suggest organizing files into consistent subfolder names according to their data type, along the lines of
+<center>
+<img alt="staging-folders" src="img/staging-folders.png" />
+</center></p>
+<h2 id="submitting-and-tracking">Submitting and Tracking</h2>
+<hr />
+<p>Please <a href="mailto:dash@breakthroughcancer.org">contact the DASH team</a> when your TeamLab is ready to add data to DASH. We'll be happy to 
+guide the process and help decide which staging method is appropriate, as well as perform initial data validation. This validation may
+include PHI assessment, verifying that trial-specific IDs (when applicable) have been entered into the
+<a href="https://breakthroughcancer.sharepoint.com/:x:/s/DataScienceHub/EXcr6XK3eTdEienLGINk6WQBxOI0Xdt78GhulUT9gXz-PQ?e=2VTl1d">data submission tracker</a>
+and associated with corresponding BTC identifiers, and that sufficient metadata are captured.</p>
+<h3 id="sharing-and-orphaning">Sharing and Orphaning</h3>
+<p><strong><em>It is important to note that</em></strong></p>
+<ul>
+<li>Submitting data to DASH does not confer access to other TeamLabs in BTC: until the TeamLab collectively decides to provide such data to other TeamLabs, access is limited to members of the submitting TeamLab</li>
+<li>Clinical lab manuals and SOPs outline steps for registering trial-specific subject and sample IDs in DASH, to prevent <strong><em>orphaning</em></strong>:
+when the provenance of physical material or data cannot be established because it's been shipped from one institute to 
+another either (a) without trial-specific IDs or (b) recording those trial-specific IDs in DASH and assigning corresponding BTC IDs</li>
+</ul>
+<h2 id="data-lake">Data Lake</h2>
+<hr />
+<p>After staging, data will be migrated to the data lake: a semi-organized storage area of cloud buckets containing the files "as deposited," meaning no additional processing, subdivision or interpretation has been performed upon the uploaded files--other than stratification by BTC identifiers, TeamLab and assay data type.  Cloud buckets in the data lake will be accessible for systematic analysis in downstream pipelines and tools where the medium of exchange is coarse grained--at the level of entire files rather than portions of content within the files.  Finer grained access, such as the ability to query individual rows, columns or data elements within the files (e.g. the expression level of a single gene from a given sample) is typically not performed directly from a data lake but rather via downstream database queries, dashboards or visual-exploratory interfaces (further right in the data life cycle).</p>
+<h2 id="warehouse">Warehouse</h2>
+<hr />
+<p>The purpose of the data warehouse is to provide additional validation and cataloging of data within the lake, distilled into high-level 
+dashboards and portals queryable by way of a simple, point-click interface.  Due to the ease with which they provide comprehensive summary 
+views of data-intensive science, such portals can be an important means of initial engagement with research data.  The BTC warehouse is 
+under construction, but many other examples abound, including the
+<a href="https://gdc.cancer.gov">GDC</a> and <a href="https://data.humantumoratlas.org">HTAN</a>; here we show an excerpt from the 
+<a href="https://www.gtexportal.org/home/tissue/Heart_Atrial_Appendage?tissueSelect=Heart_Atrial_Appendage">GTEx portal:</a>
+<img alt="gtex-portal-excerpt" src="img/gtex-portal.png" /></p>
+<h2 id="analysis-and-pipelines">Analysis and Pipelines</h2>
+<hr />
+<p>The DST is working with disease teams to <a href="https://breakthroughcancer.sharepoint.com/:x:/s/BreakThroughCancerStaff/Ef9cmbzRyaZIo82GR-siTPUBmjd2x9lE-nKo3MbCbpqH_g?e=sptYZs">compile data and analysis needs cutting across BTC efforts</a>.  For each data type in this list the DST will provide one or more pipelines for primary data generation (Levels 1 and 2, i.e. L1, L2) as well as subsequent L3 and L4 analyses.  This work is still early but very active, and a number of analysis pipelines are already available from <a href="https://broadinstitute.github.io/warp/docs/get-started/">Terra</a>, MDAnderson, <a href="https://nf-co.re">NextFlow nf-core</a> and the <a href="https://openwetware.org/wiki/BioMicroCenter">MIT BioMicroCenter</a>.  Please contact the <a href="mailto:dash@breakthroughcancer.org">DASH team</a> for more information if you are unsure of how to proceed.</p>
+<h2 id="btc-identifier-scheme">BTC Identifier Scheme</h2>
+<p>Subject and sample (biospecimen) identifiers will be attached to BTC data as follows:
+<img alt="btc-id-scheme" src="img/btc-id-scheme.png" />
+Here “biospecimen” is preferred over “sample” for generality and to capture that samples can be subdivided into multiple portions. The association 
+between data file and biospecimen is maintained as metadata within the DASH database, not within the file identifier itself.  A hypothetical data 
+tree for the first subject (patient) of the BTC glioblastoma multiforme trial might look like
+<img alt="gbm-id-example" src="img/gbm-id-example.png" />
+Here 6 needle biopsy cores (samples) were extracted; the first of which has been characterized in multiple assays, yielding 8 distinctly molecular data output files (i.e. one per data type). Each interventional timepoint in a longitudinal trial would yield a new sample (or samples) for that subject.</p>
+<h2 id="data-entities-and-levels">Data Entities and Levels</h2>
+<hr />
+<p>As data flow in BTC they are processed and transformed, passing through a series of “data levels.” For each data context (e.g. clinical, imaging, sequencing, spatial) the constituent files of each data level may differ, but in all cases Level 1 represents raw or uncurated data (e.g. directly from an instrument) and each successive level represents a maturation of that data towards analysis and, eventually, publication and wider utilization.</p>
+<p>Unless explicitly stated otherwise, we propose BTC data infrastructure, processing and analysis adopt existing GDC + HTAN standards and 
+nomenclature, including for
+<a href="https://humantumoratlas.org/standard/clinical">clinical</a>, 
+<a href="https://humantumoratlas.org/standard/biospecimen">biospecimen</a>,
+<a href="https://humantumoratlas.org/standard/sequencing">sequencing</a> 
+and <a href="https://humantumoratlas.org/standard/imaging">imaging</a> data.
+For convenience, some of those standards will be excerpted below but we refer the reader back to the original material at the given links for an exhaustive treatment.
+<img alt="data-levels" src="img/data-levels.png" />
+Each disease project in BTC contributes data from 1 or more enrolled Subjects, who have donated Biospecimens. Data files are generated when 
+biospecimens are assayed by an instrument/protocol or processed in downstream SOPs or analyses. Captured metadata enables tracing of any data file back to its source biospecimen. Level 1 raw data files are derived directly from the corresponding biospecimen, whereas processed level 2-4 data files are linked to lower level parent data files.</p>
+<h2 id="clinical-data-levels-tiers">Clinical Data Levels (Tiers)</h2>
+<hr />
+<p>The BTC clinical data model consists of three tiers. Tier 1 aligns with <a href="https://gdc.cancer.gov/">Genomic Data Commons (GDC)</a> guidelines for clinical data, while Tiers 2 and 3 are informed by the <a href="https://data.humantumoratlas.org/standard/clinical">HTAN extensions to the GDC model</a>.
+<img alt="clin-data-levels" src="img/clin-data-levels.png" />
+Clinical data in BTC are still evolving as we develop trial forms and SOPs across institutions.  Only Tier1 is encompassed thus far, but <strong><em>no data will be ingested into DASH if it is not (a) fully de-identified and (b) accompanied by minimally viable metadata (biospecimen and/or clinical).</em></strong></p>
+<h2 id="omic-data-levels">Omic Data Levels</h2>
+<hr />
+<p>In alignment with TCGA and the NCI Genomic Data Commons, BTC will categorize multi-omic data into four levels:</p>
+<table>
+  <tr>
+    <th>Level</th><th>Definition</th><th>Examples</th>
+  </tr>
+  <tr>
+    <td>1</td><td>Raw data</td><td>FASTQs, unaligned BAMs</td>
+  </tr>
+  <tr>
+    <td>2</td><td>Aligned primary data</td><td>Aligned BAMs</td>
+  </tr>
+  <tr>
+    <td>3</td><td>Derived biomolecular data</td><td>Gene expression matrix files, VCFs, etc</td>
+  </tr>
+  <tr>
+    <td>4</td><td>Sample level summary data</td><td>t-SNE plot coordinates, etc</td>
+  </tr>
+</table>
+
+<p>These will apply to the multiple assay and sequencing modalities (omic data types) envisioned for use in BTC
+<a href="https://breakthroughcancer.sharepoint.com/:x:/s/BreakThroughCancerStaff/Ef9cmbzRyaZIo82GR-siTPUBmjd2x9lE-nKo3MbCbpqH_g?e=sptYZs">shown here,</a>,
+including single-cell and single-nucleus RNA Seq (sc/snRNASeq), single-cell ATAC Seq, bulk RNAseq and Bulk DNAseq.</p>
+<p>We propose that BTC follow the latest GENCODE version for gene annotations, GENCODE Version 43.  GENCODE is used for gene definitions by many consortia, including ENCODE, NCI Genomic Data Commons, Human Cell Atlas, and PCAWG (Pan-Cancer Analysis of Whole Genomes). Ensembl gene content is essentially identical to that of GENCODE (FAQ) and interconversion is possible.</p>
+<p>We further propose BTC adopt GENCODE 43 Gene Transfer Format (GTF) basic gene annotation file (GENCODE 43 GTF) and filtered files (GENCODE 43 GTF with genes only; GENCODE 43 GTF with genes only and retaining only chromosome X copy of pseudoautosomal region) for gene annotation. BTC may also include external data generated with other gene models, as the process of implementing the standard is ongoing. Within BTC metadata files, we propose the reference genome in use be specified in columns/attributes named “Genomic Reference” and “Genomic Reference URL”.</p>
+<h2 id="external-data">External Data</h2>
+<hr />
+<p>Data generated through efforts funded by other organizations is referred to as “external data”.  BTC investigators are free 
+(and encouraged) to utilize external data in BTC work, which will typically play out in one of two ways:</p>
+<ul>
+<li>
+<p><strong>Ad-hoc:</strong>  in which the investigator or their staff downloads external data to local institutional resources (e.g. on-prem compute or cloud) and references in their local BTC analyses; here the investigator and/or staff initiates &amp; performs the collecting, aggregating and storing of external data on their institutional systems</p>
+</li>
+<li>
+<p><strong>DASH:</strong> investigator requests that BTC make external easily accessible to other BTC collaborators via DASH; either in raw form directly from the data lake or more formally with BTC identifiers attached so that the identity and provenance are clear</p>
+</li>
+</ul>
+<p>In the latter case of external data being assigned BTC IDs, a unique project abbreviation will be created to indicate that the dataset is from an external source, following the schema EXT_<dataset_specific_tag>.  For example, if we were to load BRCA data from TCGA into DASH, one might use TCGA_BRCA as the project abbreviation, yielding identifiers for such data that begin with BTC-TCGA_BRCA- and so forth.  Attaching BTC identifiers to external data may provide a number of advantages</p>
+<ul>
+<li>Enabling it to be seamlessly mingled with internal BTC data</li>
+<li>Then processed and analyzed at scale in downstream pipelines or analysis tools</li>
+<li>While making the external identity and provenance of the data clear</li>
+<li>And simplifying later bookkeeping and database tracing when assembling data for publication</li>
+</ul>
+<p>but should not be interpreted as a claim that BTC now “owns” or is attempting to “re-brand” those external data.</p>
+<h2 id="version-050">Version 0.50</h2></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js" defer></script>
+        <script src="search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.4.2
+Build Date UTC : 2023-02-20 22:15:11.584529+00:00
+-->
+<center  style="font-size:.85em; color: #bababa; margin-top: -1.5em">
+2023_02_20_17:15:11
+</center>

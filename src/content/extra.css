@@ -1,0 +1,12 @@
+
+.bg-primary {
+	background-image: linear-gradient(#bebebe, #bbbbbb)
+}
+
+.nav-link {
+	color: grey;
+}
+
+.col-md-9 img {
+    border: 0px;
+}
