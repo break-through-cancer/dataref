@@ -9,7 +9,6 @@ This is pursued in concert with BTC Disease TeamLabs, and falls within the purvi
 
 The general flow of data within BTC is as follows:
 ![data-life-cycle](img/data-life-cycle.png)
-
 It is helpful to distinguish that the BTC data ecosystem has **2 layers of context:** the first encompasses institutional and especially clinical trial activity, the other encompasses data activity vis-a-vis **DASH** proper.
 
 *   **Layer 1**:  Institutions conduct clinical trials and collect sample data in their own systems, per their current practice. This originating data will have trial-specific IDs & categorizations relevant in the context of that trial or institution. And is where PHI is maintained; ***such PHI will be removed prior to ingest to BTC.***
@@ -17,23 +16,12 @@ It is helpful to distinguish that the BTC data ecosystem has **2 layers of conte
 *   **Layer 2:**  BTC will assign BTC-specific IDs when data are ingested into DASH.  The BTC nomenclature and IDs supplement those of the 
 institution and trial, rather than replace.  The mapping between BTC and trial IDs will be retained internally by BTC, and is important provenance to prevent orphaning (see below).
 
-## Staging Area
----
-The staging area is an abstraction that serves as the entryway into DASH: staging of data generated within a disease TeamLab signifies that 
-it is ready to be freely shared amongst other members of the team without encumbrance.  This can be done in one of two ways:  **first**, to 
-simplify and expedite immediate data sharing by using existing drag-n-drop infrastructure wherever possible, small images, figures and documents 
-(including pre-clinical) can be deposited directly to the **Data** folder within the team's respective SharePoint area; **second**, larger data,
-such as the molecular results of DNA or scRNA sequencing assays, should be uploaded to data lake cloud storage.  To aid clarity and automation,
-we suggest organizing files into consistent subfolder names according to their data type, along the lines of
-<center>
-![staging-folders](img/staging-folders.png)
-</center>
-
 ## Submitting and Tracking
 ---
-Please [contact the DASH team](mailto:dash@breakthroughcancer.org) when your TeamLab is ready to add data to DASH. We'll be happy to 
-guide the process and help decide which staging method is appropriate, as well as perform initial data validation. This validation may
-include PHI assessment, verifying that trial-specific IDs (when applicable) have been entered into the
+Please [contact the DASH team](mailto:dash@breakthroughcancer.org) when your TeamLab is ready to add data to DASH. We'll be happy to
+guide the process and help decide which staging method is appropriate, as well as perform initial data validation; this may include
+verification with the TeamLab (and/or PI, etc) that the data are indeed eligible and ready for sharing, initial PHI assessment,
+verifying that trial-specific IDs (when applicable) have been entered into the
 [data submission tracker](https://breakthroughcancer.sharepoint.com/:x:/s/DataScienceHub/EXcr6XK3eTdEienLGINk6WQBxOI0Xdt78GhulUT9gXz-PQ?e=2VTl1d)
 and associated with corresponding BTC identifiers, and that sufficient metadata are captured.
 
@@ -46,10 +34,29 @@ and associated with corresponding BTC identifiers, and that sufficient metadata 
 when the provenance of physical material or data cannot be established because it's been shipped from one institute to 
 another either (a) without trial-specific IDs or (b) recording those trial-specific IDs in DASH and assigning corresponding BTC IDs
 
+
+## Staging Area
+---
+The staging area is an abstraction that serves as the entryway into DASH: staging of data generated within a disease TeamLab signifies that
+it is ready to be freely shared amongst other members of the team.  This can be done in one of two ways:  **first**, to
+simplify and expedite immediate data sharing by using existing drag-n-drop infrastructure wherever possible, small images, figures and documents
+(including pre-clinical) can be deposited directly to the **Data** folder within the team's respective SharePoint area; **second**, larger data,
+such as the molecular results of DNA or scRNA sequencing assays, should be uploaded to data lake cloud storage.  To aid clarity and automation,
+we suggest organizing files into consistent subfolder names according to their data type, along the lines of
+<center>
+![staging-folders](img/staging-folders.png)
+</center>
+
 ## Data Lake
 ---
 
-After staging, data will be migrated to the data lake: a semi-organized storage area of cloud buckets containing the files "as deposited," meaning no additional processing, subdivision or interpretation has been performed upon the uploaded files--other than stratification by BTC identifiers, TeamLab and assay data type.  Cloud buckets in the data lake will be accessible for systematic analysis in downstream pipelines and tools where the medium of exchange is coarse grained--at the level of entire files rather than portions of content within the files.  Finer grained access, such as the ability to query individual rows, columns or data elements within the files (e.g. the expression level of a single gene from a given sample) is typically not performed directly from a data lake but rather via downstream database queries, dashboards or visual-exploratory interfaces (further right in the data life cycle).
+After staging, data will be migrated to the data lake: a semi-organized area of cloud storage containing the files "as deposited," meaning no
+additional processing, subdivision or interpretation has been performed upon the uploaded files--other than stratification by TeamLab, BTC
+identifiers, and assay data type.  Cloud storage in the data lake (i.e. [buckets](https://cloud.google.com/storage/docs/buckets)) will be
+accessible for systematic analysis in downstream pipelines and tools where the medium of exchange is coarse grained--at the level of entire
+files rather than portions of content within the files.  Finer grained access, such as the ability to query individual rows, columns or
+data elements within the files (e.g. the expression level of a single gene from a given sample) is typically not performed directly from a
+data lake but rather via downstream database queries, dashboards or visual-exploratory interfaces (further right in the data life cycle).
 
 ## Warehouse
 ---
