@@ -19,9 +19,7 @@ and review the suite of changes with `git status` et cetera.
 - git push
 - visit the dataref repo in GitHub via browser
 - Go to Settings->Pages
-- The should indicate 
-
-Near the top of the page GitHub should indicate something along the lines of
+- Which near the top of page should indicate something like
 
 ```
 Your site is live at https://break-through-cancer.github.io/dataref/
