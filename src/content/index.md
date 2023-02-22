@@ -48,9 +48,9 @@ In addition to surfacing the inventory of data being readied for inclusion in DA
 phase each dataset has progressed rightward during its life cycle. While the data SOP remains under development and not fully
 operational, this process may take a week or more after initial submission; but the tracker will reflect when data are
 accessible to the given teamlab via dashboards and available for download through the
-[data browser](https://dash.breakthroughcancer.org/data_browser), and (eventually) explorable in familiar tools like
+[data browser](https://dash.breakthroughcancer.org/data_browser), and eventually explorable in familiar tools like
 <a target=_blank href="https://www.cbioportal.org">cBioPortal</a>,
-<a target=_blank href="https://cellxgene.cziscience.com">cellxgene</a>), or 
+<a target=_blank href="https://cellxgene.cziscience.com">cellxgene</a>, or 
 <a target=_blank href="https://www.cycif.org/software/minerva">Minerva</a> as appropriate.
 
 ###Sharing and Orphaning 
