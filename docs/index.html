@@ -135,13 +135,18 @@
 
 <h1 id="introduction">Introduction</h1>
 <p>The aim of this document is to serve as the definitive reference for data handling in Break Through Cancer (BTC), establishing the consensus rubric under which data are identified, categorized, generated, aggregated, accessed, and governed.  This includes metadata capture during patient enrollment and sample acquisition, standards and processes for molecular assay data generation and pipelines, data flow diagrams providing simplified views, as well as a FAQ for common questions.
-In concert with BTC Disease TeamLabs, these norms are being codified by the <a href="https://dash.breakthroughcancer.org">Data Science TeamLab (DST)</a> as a key element of the <a href="https://breakthroughcancer-my.sharepoint.com/:b:/g/personal/msn_breakthroughcancer_org/EV7qf7tHVRpMoFaCgpI_owwBAzJ-BsvEBHjkVcEr74WSRw?e=lc2A8r">data science proposal</a>.</p>
+In concert with BTC Disease TeamLabs, these norms are being codified by the Data Science TeamLab (DST)
+as a key element of the 
+<a target=_blank href="https://breakthroughcancer-my.sharepoint.com/:b:/g/personal/msn_breakthroughcancer_org/EV7qf7tHVRpMoFaCgpI_owwBAzJ-BsvEBHjkVcEr74WSRw?e=lc2A8r">data science proposal</a></p>
 <p>The system and infrastructure which serves as the convergence point for data science activity within BTC is
 code-named <strong>DASH</strong>, short for <strong>DA</strong>ta <strong>S</strong>cience <strong>H</strong>ub; and is informed by numerous standards,
 including <a href="https://www.go-fair.org/fair-principles/">F.A.I.R. data practice</a> and
-<a href="https://sharing.nih.gov/data-management-and-sharing-policy/sharing-scientific-data/selecting-a-data-repository">NIH guidelines</a>,
-and draws heavily from lessons learned and software developed in earlier and sister projects, including
-<a href="https://data.humantumoratlas.org">HTAN</a>, <a href="https://gdc.cancer.gov">GDC</a>, and <a href="http://cancergenome.nih.gov">TCGA</a>.</p>
+<a target=_blank href="https://sharing.nih.gov/data-management-and-sharing-policy/sharing-scientific-data/selecting-a-data-repository">
+NIH guidelines</a>
+, and draws heavily from lessons learned and software developed in earlier and sister projects, including
+<a href="https://data.humantumoratlas.org">HTAN</a>,
+<a target=_blank href="https://gdc.cancer.gov">GDC</a>, and
+<a target=_blank href="http://cancergenome.nih.gov">TCGA</a></p>
 <h2 id="data-life-cycle">Data Life Cycle</h2>
 <hr />
 <p>The general flow of data within BTC is as follows:
@@ -159,8 +164,8 @@ institution and trial, rather than replace.  The mapping between BTC and trial I
 <p><strong>Note that DASH is still in the early stage of development and this data lifecycle is not fully operational.</strong>
 Reflecting the patient-centered BTC sense of urgency, to date more activity has been leftward, working with disease teams to
 identify how clinical and research needs translate into SOPs, staging and cloud-based data infrastructure so that <em>data may flow</em>.
-However, that work directly supports <a href="#analysis-and-pipelines">pipelined analyses</a> and exploratory visualization capabilites 
-moving rightward, and we are committed to an iterative, <a href="https://agilemanifesto.org">agile-inspired process</a> of frequent 
+However, that work directly supports <a href="#analysis-and-pipelines">pipelined analyses</a> and exploratory visualization capabilites
+moving rightward, and we are committed to an iterative, <a href="https://agilemanifesto.org">agile-inspired process</a> of frequent
 data and software releases to further BTC goals.</p>
 <h2 id="submitting-and-tracking">Submitting and Tracking</h2>
 <hr />
@@ -170,12 +175,12 @@ verification with the TeamLab (and/or PI, etc) that the data are indeed eligible
 verifying that trial-specific IDs (when applicable) have been entered into the
 <a href="https://breakthroughcancer.sharepoint.com/:x:/s/DataScienceHub/EXcr6XK3eTdEienLGINk6WQBxOI0Xdt78GhulUT9gXz-PQ?e=2VTl1d">data submission tracker</a>
 and associated with corresponding BTC identifiers, and that sufficient metadata are captured.</p>
-<p>In addition to surfacing the inventory of data being readied for inclusion in DASH, the tracker will also indicate through what 
-phase each dataset has progressed rightward during its life cycle. While the data SOP remains under development and not fully 
-operational, this process may take a week or more after initial submission; but the tracker will reflect when data are 
-accessible to the given teamlab via dashboards and available for download through the 
-<a href="https://dash.breakthroughcancer.org/data_browser">data browser</a>, and (eventually) explorable in familiar tools 
-like <a href="https://www.cbioportal.org">cBioPortal</a>, 
+<p>In addition to surfacing the inventory of data being readied for inclusion in DASH, the tracker will also indicate through what
+phase each dataset has progressed rightward during its life cycle. While the data SOP remains under development and not fully
+operational, this process may take a week or more after initial submission; but the tracker will reflect when data are
+accessible to the given teamlab via dashboards and available for download through the
+<a href="https://dash.breakthroughcancer.org/data_browser">data browser</a>, and (eventually) explorable in familiar tools
+like <a href="https://www.cbioportal.org">cBioPortal</a>,
 <a href="https://cellxgene.cziscience.com/">cellXgene</a> or <a href="https://www.cycif.org/software/minerva">Minerva</a> as appropriate.</p>
 <h3 id="sharing-and-orphaning">Sharing and Orphaning</h3>
 <p><strong><em>It is important to note that</em></strong></p>
@@ -216,13 +221,13 @@ under construction, but many other examples abound, including the
 <img alt="gtex-portal-excerpt" src="img/gtex-portal.png" /></p>
 <h2 id="analysis-and-pipelines">Analysis and Pipelines</h2>
 <hr />
-<p>The DST is working with disease teams to <a href="https://breakthroughcancer.sharepoint.com/:x:/s/BreakThroughCancerStaff/Ef9cmbzRyaZIo82GR-siTPUBmjd2x9lE-nKo3MbCbpqH_g?e=sptYZs">compile data and analysis needs cutting across BTC 
-efforts</a>.  For each data type in this list 
+<p>The DST is working with disease teams to <a href="https://breakthroughcancer.sharepoint.com/:x:/s/BreakThroughCancerStaff/Ef9cmbzRyaZIo82GR-siTPUBmjd2x9lE-nKo3MbCbpqH_g?e=sptYZs">compile data and analysis needs cutting across BTC
+efforts</a>.  For each data type in this list
 the DST will provide pipelines and/or tools for each <a href="#omic-data-levels">data level</a>: from Levels 1 and 2 primary
-data generation (L1, L2) through subsequent L3 and L4 analyses.  This work is still early but very active, and a 
-number of analysis pipelines are already available from 
-<a href="https://broadinstitute.github.io/warp/docs/get-started/">Terra</a>, MDAnderson, <a href="https://nf-co.re">NextFlow nf-core</a> 
-and the <a href="https://openwetware.org/wiki/BioMicroCenter">MIT BioMicroCenter</a>.  Please contact the 
+data generation (L1, L2) through subsequent L3 and L4 analyses.  This work is still early but very active, and a
+number of analysis pipelines are already available from
+<a href="https://broadinstitute.github.io/warp/docs/get-started/">Terra</a>, MDAnderson, <a href="https://nf-co.re">NextFlow nf-core</a>
+and the <a href="https://openwetware.org/wiki/BioMicroCenter">MIT BioMicroCenter</a>.  Please contact the
 <a href="mailto:dash@breakthroughcancer.org">DASH team</a> for more information if you are unsure of how to proceed.</p>
 <h2 id="btc-identifier-scheme">BTC Identifier Scheme</h2>
 <p>Subject and sample (biospecimen) identifiers will be attached to BTC data as follows:
@@ -377,8 +382,8 @@ including single-cell and single-nucleus RNA Seq (sc/snRNASeq), single-cell ATAC
 
 <!--
 MkDocs version : 1.4.2
-Build Date UTC : 2023-02-22 15:35:41.879259+00:00
+Build Date UTC : 2023-02-22 16:05:42.818317+00:00
 -->
 <center  style="font-size:.85em; color: #bababa; margin-top: -1.5em">
-2023_02_22_10:35:41
+2023_02_22_11:05:42
 </center>

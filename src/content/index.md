@@ -1,14 +1,19 @@
 # Introduction
 
 The aim of this document is to serve as the definitive reference for data handling in Break Through Cancer (BTC), establishing the consensus rubric under which data are identified, categorized, generated, aggregated, accessed, and governed.  This includes metadata capture during patient enrollment and sample acquisition, standards and processes for molecular assay data generation and pipelines, data flow diagrams providing simplified views, as well as a FAQ for common questions.
-In concert with BTC Disease TeamLabs, these norms are being codified by the [Data Science TeamLab (DST)](https://dash.breakthroughcancer.org) as a key element of the [data science proposal](https://breakthroughcancer-my.sharepoint.com/:b:/g/personal/msn_breakthroughcancer_org/EV7qf7tHVRpMoFaCgpI_owwBAzJ-BsvEBHjkVcEr74WSRw?e=lc2A8r).
+In concert with BTC Disease TeamLabs, these norms are being codified by the Data Science TeamLab (DST)
+as a key element of the 
+<a target=_blank href="https://breakthroughcancer-my.sharepoint.com/:b:/g/personal/msn_breakthroughcancer_org/EV7qf7tHVRpMoFaCgpI_owwBAzJ-BsvEBHjkVcEr74WSRw?e=lc2A8r">data science proposal</a>
 
 The system and infrastructure which serves as the convergence point for data science activity within BTC is
 code-named **DASH**, short for **DA**ta **S**cience **H**ub; and is informed by numerous standards,
 including [F.A.I.R. data practice](https://www.go-fair.org/fair-principles/) and
-[NIH guidelines](https://sharing.nih.gov/data-management-and-sharing-policy/sharing-scientific-data/selecting-a-data-repository),
-and draws heavily from lessons learned and software developed in earlier and sister projects, including
-[HTAN](https://data.humantumoratlas.org), [GDC](https://gdc.cancer.gov), and [TCGA](http://cancergenome.nih.gov).
+<a target=_blank href="https://sharing.nih.gov/data-management-and-sharing-policy/sharing-scientific-data/selecting-a-data-repository">
+NIH guidelines</a>
+, and draws heavily from lessons learned and software developed in earlier and sister projects, including
+[HTAN](https://data.humantumoratlas.org),
+<a target=_blank href="https://gdc.cancer.gov">GDC</a>, and
+<a target=_blank href="http://cancergenome.nih.gov">TCGA</a>
 
 ## Data Life Cycle
 ---
