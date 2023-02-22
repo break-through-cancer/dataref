@@ -1,8 +1,14 @@
-# Purpose
+# Introduction
 
 The aim of this document is to serve as the definitive reference for data handling in Break Through Cancer (BTC), establishing the consensus rubric under which data are identified, categorized, generated, aggregated, accessed, and governed.  This includes metadata capture during patient enrollment and sample acquisition, standards and processes for molecular assay data generation and pipelines, data flow diagrams providing simplified views, as well as a FAQ for common questions.
+In concert with BTC Disease TeamLabs, these norms are being codified by the [Data Science TeamLab (DST)](https://dash.breakthroughcancer.org) as a key element of the [data science proposal](https://breakthroughcancer-my.sharepoint.com/:b:/g/personal/msn_breakthroughcancer_org/EV7qf7tHVRpMoFaCgpI_owwBAzJ-BsvEBHjkVcEr74WSRw?e=lc2A8r).
 
-This is pursued in concert with BTC Disease TeamLabs, and falls within the purview of the larger **Data Science TeamLab (DST)**. The system and infrastructure which serves as the convergence point for data science activity within BTC is code-named **DASH**, short for **DA**ta **S**cience **H**ub.  The practice of data science in BTC is informed by numerous standards, including [F.A.I.R. practice](https://www.go-fair.org/fair-principles/) and [NIH guidelines](https://sharing.nih.gov/data-management-and-sharing-policy/sharing-scientific-data/selecting-a-data-repository), and draws heavily from lessons learned and software developed in earlier and sister projects, including [TCGA](http://cancergenome.nih.gov), [GDC](https://gdc.cancer.gov), and [HTAN](https://data.humantumoratlas.org).
+The system and infrastructure which serves as the convergence point for data science activity within BTC is
+code-named **DASH**, short for **DA**ta **S**cience **H**ub; and is informed by numerous standards,
+including [F.A.I.R. data practice](https://www.go-fair.org/fair-principles/) and
+[NIH guidelines](https://sharing.nih.gov/data-management-and-sharing-policy/sharing-scientific-data/selecting-a-data-repository),
+and draws heavily from lessons learned and software developed in earlier and sister projects, including
+[HTAN](https://data.humantumoratlas.org), [GDC](https://gdc.cancer.gov), and [TCGA](http://cancergenome.nih.gov).
 
 ## Data Life Cycle
 ---
@@ -16,6 +22,13 @@ It is helpful to distinguish that the BTC data ecosystem has **2 layers of conte
 *   **Layer 2:**  BTC will assign BTC-specific IDs when data are ingested into DASH.  The BTC nomenclature and IDs supplement those of the 
 institution and trial, rather than replace.  The mapping between BTC and trial IDs will be retained internally by BTC, and is important provenance to prevent orphaning (see below).
 
+**Note that DASH is still in the early stage of development and this data lifecycle is not fully operational.**
+Reflecting the patient-centered BTC sense of urgency, to date more activity has been leftward, working with disease teams to
+identify how clinical and research needs translate into SOPs, staging and cloud-based data infrastructure so that *data may flow*.
+However, that work directly supports [pipelined analyses](#analysis-and-pipelines) and exploratory visualization capabilites
+moving rightward, and we are committed to an iterative, [agile-inspired process](https://agilemanifesto.org) of frequent
+data and software releases to further BTC goals.
+
 ## Submitting and Tracking
 ---
 Please [contact the DASH team](mailto:dash@breakthroughcancer.org) when your TeamLab is ready to add data to DASH. We'll be happy to
@@ -24,6 +37,14 @@ verification with the TeamLab (and/or PI, etc) that the data are indeed eligible
 verifying that trial-specific IDs (when applicable) have been entered into the
 [data submission tracker](https://breakthroughcancer.sharepoint.com/:x:/s/DataScienceHub/EXcr6XK3eTdEienLGINk6WQBxOI0Xdt78GhulUT9gXz-PQ?e=2VTl1d)
 and associated with corresponding BTC identifiers, and that sufficient metadata are captured.
+
+In addition to surfacing the inventory of data being readied for inclusion in DASH, the tracker will also indicate through what
+phase each dataset has progressed rightward during its life cycle. While the data SOP remains under development and not fully
+operational, this process may take a week or more after initial submission; but the tracker will reflect when data are
+accessible to the given teamlab via dashboards and available for download through the
+[data browser](https://dash.breakthroughcancer.org/data_browser), and (eventually) explorable in familiar tools
+like [cBioPortal](https://www.cbioportal.org),
+[cellXgene](https://cellxgene.cziscience.com/) or [Minerva](https://www.cycif.org/software/minerva) as appropriate.
 
 ###Sharing and Orphaning 
 
@@ -46,7 +67,6 @@ we suggest organizing files into consistent subfolder names according to their d
 <center>
 ![staging-folders](img/staging-folders.png)
 </center>
-
 ## Data Lake
 ---
 
@@ -73,7 +93,14 @@ under construction, but many other examples abound, including the
 ## Analysis and Pipelines
 ---
 
-The DST is working with disease teams to [compile data and analysis needs cutting across BTC efforts](https://breakthroughcancer.sharepoint.com/:x:/s/BreakThroughCancerStaff/Ef9cmbzRyaZIo82GR-siTPUBmjd2x9lE-nKo3MbCbpqH_g?e=sptYZs).  For each data type in this list the DST will provide one or more pipelines for primary data generation (Levels 1 and 2, i.e. L1, L2) as well as subsequent L3 and L4 analyses.  This work is still early but very active, and a number of analysis pipelines are already available from [Terra](https://broadinstitute.github.io/warp/docs/get-started/), MDAnderson, [NextFlow nf-core](https://nf-co.re) and the [MIT BioMicroCenter](https://openwetware.org/wiki/BioMicroCenter).  Please contact the [DASH team](mailto:dash@breakthroughcancer.org) for more information if you are unsure of how to proceed.
+The DST is working with disease teams to [compile data and analysis needs cutting across BTC
+efforts](https://breakthroughcancer.sharepoint.com/:x:/s/BreakThroughCancerStaff/Ef9cmbzRyaZIo82GR-siTPUBmjd2x9lE-nKo3MbCbpqH_g?e=sptYZs).  For each data type in this list
+the DST will provide pipelines and/or tools for each [data level](#omic-data-levels): from Levels 1 and 2 primary
+data generation (L1, L2) through subsequent L3 and L4 analyses.  This work is still early but very active, and a
+number of analysis pipelines are already available from
+[Terra](https://broadinstitute.github.io/warp/docs/get-started/), MDAnderson, [NextFlow nf-core](https://nf-co.re)
+and the [MIT BioMicroCenter](https://openwetware.org/wiki/BioMicroCenter).  Please contact the
+[DASH team](mailto:dash@breakthroughcancer.org) for more information if you are unsure of how to proceed.
    
 ## BTC Identifier Scheme
 
@@ -156,5 +183,5 @@ In the latter case of external data being assigned BTC IDs, a unique project abb
 
 but should not be interpreted as a claim that BTC now “owns” or is attempting to “re-brand” those external data.
 
-## Version 0.50
+## Version 0.51
 
