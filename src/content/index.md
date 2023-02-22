@@ -40,16 +40,18 @@ Please [contact the DASH team](mailto:dash@breakthroughcancer.org) when your Tea
 guide the process and help decide which staging method is appropriate, as well as perform initial data validation; this may include
 verification with the TeamLab (and/or PI, etc) that the data are indeed eligible and ready for sharing, initial PHI assessment,
 verifying that trial-specific IDs (when applicable) have been entered into the
-[data submission tracker](https://breakthroughcancer.sharepoint.com/:x:/s/DataScienceHub/EXcr6XK3eTdEienLGINk6WQBxOI0Xdt78GhulUT9gXz-PQ?e=2VTl1d)
-and associated with corresponding BTC identifiers, and that sufficient metadata are captured.
+<a target=_blank
+href="https://breakthroughcancer.sharepoint.com/:x:/s/DataScienceHub/EXcr6XK3eTdEienLGINk6WQBxOI0Xdt78GhulUT9gXz-PQ?e=2VTl1d">
+data submission tracker</a> and associated with corresponding BTC identifiers, and that sufficient metadata are captured.
 
 In addition to surfacing the inventory of data being readied for inclusion in DASH, the tracker will also indicate through what
 phase each dataset has progressed rightward during its life cycle. While the data SOP remains under development and not fully
 operational, this process may take a week or more after initial submission; but the tracker will reflect when data are
 accessible to the given teamlab via dashboards and available for download through the
-[data browser](https://dash.breakthroughcancer.org/data_browser), and (eventually) explorable in familiar tools
-like [cBioPortal](https://www.cbioportal.org),
-[cellXgene](https://cellxgene.cziscience.com/) or [Minerva](https://www.cycif.org/software/minerva) as appropriate.
+[data browser](https://dash.breakthroughcancer.org/data_browser), and (eventually) explorable in familiar tools like
+<a target=_blank href="https://www.cbioportal.org">cBioPortal</a>,
+<a target=_blank href="https://cellxgene.cziscience.com">cellxgene</a>), or 
+<a target=_blank href="https://www.cycif.org/software/minerva">Minerva</a> as appropriate.
 
 ###Sharing and Orphaning 
 
@@ -77,7 +79,9 @@ we suggest organizing files into consistent subfolder names according to their d
 
 After staging, data will be migrated to the data lake: a semi-organized area of cloud storage containing the files "as deposited," meaning no
 additional processing, subdivision or interpretation has been performed upon the uploaded files--other than stratification by TeamLab, BTC
-identifiers, and assay data type.  Cloud storage in the data lake (i.e. [buckets](https://cloud.google.com/storage/docs/buckets)) will be
+identifiers, and assay data type.  Cloud storage in the data lake 
+(i.e. <a target=_blank href="https://cloud.google.com/storage/docs/buckets">buckets</a>)
+will be
 accessible for systematic analysis in downstream pipelines and tools where the medium of exchange is coarse grained--at the level of entire
 files rather than portions of content within the files.  Finer grained access, such as the ability to query individual rows, columns or
 data elements within the files (e.g. the expression level of a single gene from a given sample) is typically not performed directly from a
@@ -90,16 +94,19 @@ The purpose of the data warehouse is to provide additional validation and catalo
 dashboards and portals queryable by way of a simple, point-click interface.  Due to the ease with which they provide comprehensive summary 
 views of data-intensive science, such portals can be an important means of initial engagement with research data.  The BTC warehouse is 
 under construction, but many other examples abound, including the
-[GDC](https://gdc.cancer.gov) and [HTAN](https://data.humantumoratlas.org); here we show an excerpt from the 
-[GTEx portal:](https://www.gtexportal.org/home/tissue/Heart_Atrial_Appendage?tissueSelect=Heart_Atrial_Appendage)
+<a target=_blank href="https://gdc.cancer.gov">GDC</a> and
+[HTAN](https://data.humantumoratlas.org); here we show an excerpt from the 
+<a target=_blank href="https://www.gtexportal.org/home/tissue/Heart_Atrial_Appendage?tissueSelect=Heart_Atrial_Appendage">
+GTEx portal</a>
 ![gtex-portal-excerpt](img/gtex-portal.png)
-
 
 ## Analysis and Pipelines
 ---
 
-The DST is working with disease teams to [compile data and analysis needs cutting across BTC
-efforts](https://breakthroughcancer.sharepoint.com/:x:/s/BreakThroughCancerStaff/Ef9cmbzRyaZIo82GR-siTPUBmjd2x9lE-nKo3MbCbpqH_g?e=sptYZs).  For each data type in this list
+The DST is working with disease teams to 
+<a target=_blank href="https://breakthroughcancer.sharepoint.com/:x:/s/BreakThroughCancerStaff/Ef9cmbzRyaZIo82GR-siTPUBmjd2x9lE-nKo3MbCbpqH_g?e=sptYZs">compile data and analysis needs cutting across BTC efforts</a> and
+
+For each data type in this list
 the DST will provide pipelines and/or tools for each [data level](#omic-data-levels): from Levels 1 and 2 primary
 data generation (L1, L2) through subsequent L3 and L4 analyses.  This work is still early but very active, and a
 number of analysis pipelines are already available from
@@ -135,7 +142,9 @@ biospecimens are assayed by an instrument/protocol or processed in downstream SO
 
 ## Clinical Data Levels (Tiers)
 ---
-The BTC clinical data model consists of three tiers. Tier 1 aligns with [Genomic Data Commons (GDC)](https://gdc.cancer.gov/) guidelines for clinical data, while Tiers 2 and 3 are informed by the [HTAN extensions to the GDC model](https://data.humantumoratlas.org/standard/clinical).
+The BTC clinical data model consists of three tiers. Tier 1 aligns with 
+<a target=_blank href="https://gdc.cancer.gov">Genomic Data Commons (GDC)</a> guidelines for clinical data, 
+while Tiers 2 and 3 are informed by the [HTAN extensions to the GDC model](https://data.humantumoratlas.org/standard/clinical).
 ![clin-data-levels](img/clin-data-levels.png)
 Clinical data in BTC are still evolving as we develop trial forms and SOPs across institutions.  Only Tier1 is encompassed thus far, but ***no data will be ingested into DASH if it is not (a) fully de-identified and (b) accompanied by minimally viable metadata (biospecimen and/or clinical).***
 
@@ -161,8 +170,8 @@ In alignment with TCGA and the NCI Genomic Data Commons, BTC will categorize mul
   </tr>
 </table>
 
-These will apply to the multiple assay and sequencing modalities (omic data types) envisioned for use in BTC
-[shown here,](https://breakthroughcancer.sharepoint.com/:x:/s/BreakThroughCancerStaff/Ef9cmbzRyaZIo82GR-siTPUBmjd2x9lE-nKo3MbCbpqH_g?e=sptYZs),
+These will apply to the 
+<a target=_blank href="https://breakthroughcancer.sharepoint.com/:x:/s/BreakThroughCancerStaff/Ef9cmbzRyaZIo82GR-siTPUBmjd2x9lE-nKo3MbCbpqH_g?e=sptYZs"> multiple assay and sequencing modalities (omic data types) envisioned for BTC</a>,
 including single-cell and single-nucleus RNA Seq (sc/snRNASeq), single-cell ATAC Seq, bulk RNAseq and Bulk DNAseq.
 
 We propose that BTC follow the latest GENCODE version for gene annotations, GENCODE Version 43.  GENCODE is used for gene definitions by many consortia, including ENCODE, NCI Genomic Data Commons, Human Cell Atlas, and PCAWG (Pan-Cancer Analysis of Whole Genomes). Ensembl gene content is essentially identical to that of GENCODE (FAQ) and interconversion is possible.
