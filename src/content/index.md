@@ -93,6 +93,16 @@ files rather than portions of content within the files.  Finer grained access, s
 data elements within the files (e.g. the expression level of a single gene from a given sample) is typically not performed directly from a
 data lake but rather via downstream database queries, dashboards or visual-exploratory interfaces (further right in the data life cycle).
 
+## Browse
+---
+Development of a simple browser interface for exploring and downloading data is underway and a very high
+priority.  Until this is available you may use
+
+- The <a target=_blank
+href="https://breakthroughcancer.sharepoint.com/:x:/s/DataScienceHub/EXcr6XK3eTdEienLGINk6WQBxOI0Xdt78GhulUT9gXz-PQ?e=2VTl1d"> data tracker</a> to see what teams have submitted data and whether it is ready for download
+
+- Programmatic tools to download directly from cloud buckets ([contact the DASH team](mailto:dash@breakthroughcancer.org) for more details)
+
 ## Warehouse
 ---
 

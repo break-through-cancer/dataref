@@ -17,13 +17,7 @@ and deciding which [staging method](index.md#staging-area) is appropriate.  For 
 
 2. **How can I see what data is in DASH or retrieve it for my work?**
 
-    Development of a simple browser interface for exploring and downloading data is underway and a very high
-    priority.  Until this is available you may use
-
-    - The <a target=_blank
-href="https://breakthroughcancer.sharepoint.com/:x:/s/DataScienceHub/EXcr6XK3eTdEienLGINk6WQBxOI0Xdt78GhulUT9gXz-PQ?e=2VTl1d"> data tracker</a> to see what teams have submitted data and whether it is ready for download
-
-    - Command line tools to download directly from cloud buckets ([contact the DASH team](mailto:dash@breakthroughcancer.org) for more details)
+    Please see the [browsing section of the data reference](index.md#browse).
 
 3. **What pipelines will be available for analysis?**
    This is discussed in [the data reference](index.md#analysis-and-pipelines).
