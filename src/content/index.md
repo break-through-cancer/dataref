@@ -1,5 +1,9 @@
-# Introduction
 
+<style>
+   .navbar { display: none; }
+</style>
+
+## BTC Data Reference
 The aim of this document is to serve as the definitive reference for data handling in Break Through Cancer (BTC), establishing the consensus rubric under which data are identified, categorized, generated, aggregated, accessed, and governed.  This includes metadata capture during patient enrollment and sample acquisition, standards and processes for molecular assay data generation and pipelines, data flow diagrams providing simplified views, as well as a FAQ for common questions.
 In concert with BTC Disease TeamLabs, these norms are being codified by the Data Science TeamLab (DST)
 as a key element of the 
@@ -197,5 +201,5 @@ In the latter case of external data being assigned BTC IDs, a unique project abb
 
 but should not be interpreted as a claim that BTC now “owns” or is attempting to “re-brand” those external data.
 
-## Version 0.51
+## Version 0.52
 

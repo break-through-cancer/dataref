@@ -1,10 +1,11 @@
-## BTC Data Science Frequently Asked Questions
 
 <style>
-   .bs-sidebar { display: none; }
+   .navbar, .bs-sidebar { display: none; }
 </style>
 
-##
+## BTC Data Science Frequently Asked Questions
+
+
 1. **Who is responsible for data analysis within BTC disease team labs?**
 
     There is fuzzy overlap in responsibility for analysis:  it should be driven to the greatest extent possible by the 
