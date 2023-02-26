@@ -40,13 +40,15 @@ data and software releases to further BTC goals.
 
 ## Submitting and Tracking
 ---
-Please [contact the DASH team](mailto:dash@breakthroughcancer.org) when your TeamLab is ready to add data to DASH. We'll be happy to
-guide the process and help decide which staging method is appropriate, as well as perform initial data validation; this may include
-verification with the TeamLab (and/or PI, etc) that the data are indeed eligible and ready for sharing, initial PHI assessment,
-verifying that trial-specific IDs (when applicable) have been entered into the
+Please [contact the DASH team](mailto:dash@breakthroughcancer.org) when your TeamLab is ready to add data to DASH. We'll be happy to guide the process, starting with adding entries to the
 <a target=_blank
-href="https://breakthroughcancer.sharepoint.com/:x:/s/DataScienceHub/EXcr6XK3eTdEienLGINk6WQBxOI0Xdt78GhulUT9gXz-PQ?e=2VTl1d">
-data submission tracker</a> and associated with corresponding BTC identifiers, and that sufficient metadata are captured.
+href="https://breakthroughcancer.sharepoint.com/:x:/s/DataScienceHub/EXcr6XK3eTdEienLGINk6WQBxOI0Xdt78GhulUT9gXz-PQ?e=2VTl1d"> data submission tracker</a>
+and deciding which [staging method](#staging-area) is appropriate, as well as perform initial data validation; this
+may include verification with the TeamLab (and/or PI, etc) that the data are indeed eligible and ready for sharing,
+initial PHI assessment, verifying that trial-specific IDs (when applicable) have been entered into the
+<a target=_blank
+href="https://breakthroughcancer.sharepoint.com/:x:/s/DataScienceHub/EXcr6XK3eTdEienLGINk6WQBxOI0Xdt78GhulUT9gXz-PQ?e=2VTl1d"> data submission tracker</a> 
+and associated with corresponding BTC identifiers, and that sufficient metadata are captured.
 
 In addition to surfacing the inventory of data being readied for inclusion in DASH, the tracker will also indicate through what
 phase each dataset has progressed rightward during its life cycle. While the data SOP remains under development and not fully
@@ -107,24 +109,29 @@ GTEx portal</a>
 ## Analysis and Pipelines
 ---
 
-The DST is working with disease teams to 
-<a target=_blank href="https://breakthroughcancer.sharepoint.com/:x:/s/BreakThroughCancerStaff/Ef9cmbzRyaZIo82GR-siTPUBmjd2x9lE-nKo3MbCbpqH_g?e=sptYZs">compile data and analysis needs cutting across BTC efforts</a> and
+To guide data generation and analysis the DST has established
+<a target=_blank href="https://breakthroughcancer.sharepoint.com/:x:/s/BreakThroughCancerStaff/Ef9cmbzRyaZIo82GR-siTPUBmjd2x9lE-nKo3MbCbpqH_g?e=sptYZs">Protocol and Analysis working groups</a> with disease teams, which aim to:
+identify needs cutting across TeamLabs, align common SOPs for data generation and QC, coordinate changes as
+new technologies and needs arise, tie each central analytic pipeline to consumers of its data in each
+TeamLab, and perform regular check-ins to ensure analytic approaches continue to suit disease TeamLab
+objectives.
 
-For each data type in this list
-the DST will provide pipelines and/or tools for each [data level](#omic-data-levels): from Levels 1 and 2 primary
-data generation (L1, L2) through subsequent L3 and L4 analyses.  This work is still early but very active, and a
-number of analysis pipelines are already available from
+For each data type generated across two or more TeamLabs the DST will provide best-practices pipelines and/or
+tools for each [data level](#omic-data-levels): from Levels 1 and 2 primary data generation (L1, L2) through
+subsequent L3 and L4 analyses.  This work is still early but very active, and a number of analysis pipelines
+are already available from
 [Terra](https://broadinstitute.github.io/warp/docs/get-started/), MDAnderson, [NextFlow nf-core](https://nf-co.re)
 and the [MIT BioMicroCenter](https://openwetware.org/wiki/BioMicroCenter).  Please contact the
 [DASH team](mailto:dash@breakthroughcancer.org) for more information if you are unsure of how to proceed.
-   
-## BTC Identifier Scheme
 
-Subject and sample (biospecimen) identifiers will be attached to BTC data as follows:
+## BTC Identifier Scheme
+---
+
+As data are added to DASH they will be tagged with subject and sample (biospecimen) identifiers as follows:
 ![btc-id-scheme](img/btc-id-scheme.png)
-Here “biospecimen” is preferred over “sample” for generality and to capture that samples can be subdivided into multiple portions. The association 
-between data file and biospecimen is maintained as metadata within the DASH database, not within the file identifier itself.  A hypothetical data 
-tree for the first subject (patient) of the BTC glioblastoma multiforme trial might look like
+At minimum such IDs will be attached to BTC trial data; ideally to BTC pre-clinicial data as well, and potentially to external data as appropriate. Note that here “biospecimen” is preferred over “sample” for generality and to capture that samples can be subdivided into multiple portions. The association between data file and biospecimen is maintained as
+metadata within the DASH database, not within the file identifier itself.  A hypothetical data tree for the first
+subject (patient) of the BTC glioblastoma multiforme trial might look like
 ![gbm-id-example](img/gbm-id-example.png)
 Here 6 needle biopsy cores (samples) were extracted; the first of which has been characterized in multiple assays, yielding 8 distinctly molecular data output files (i.e. one per data type). Each interventional timepoint in a longitudinal trial would yield a new sample (or samples) for that subject.
 
@@ -201,5 +208,5 @@ In the latter case of external data being assigned BTC IDs, a unique project abb
 
 but should not be interpreted as a claim that BTC now “owns” or is attempting to “re-brand” those external data.
 
-## Version 0.52
+## Version 0.53
 

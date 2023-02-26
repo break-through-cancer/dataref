@@ -93,21 +93,34 @@
 </style>
 
 <h2 id="btc-data-science-frequently-asked-questions">BTC Data Science Frequently Asked Questions</h2>
+<hr>
+
 <ol>
 <li>
-<p><strong>Who is responsible for data analysis within BTC disease team labs?</strong></p>
-<p>There is fuzzy overlap in responsibility for analysis:  it should be driven to the greatest extent possible by the 
-disease teamlab, as reflected in their respective budgets, and supported by the Data Science TeamLab (DST) in whatever
-means necessary (whether computational analytics, data engineering, visualization, etc), but not wholly outsourced
-from the disease teamlab to the DST.</p>
-<p>Where that line is drawn for each scientific question or project will likely shift—and may also depend upon trial timelines 
-and staffing—-probably in some cases the data scientists may need to pick up more of the analysis, in others less so.  But 
-the overall view, at least initially while BTC finds its operational footing vis-à-vis data science, is that the DST is not
-“just another core, service-oriented facility,” but rather is a resource of expert collaborators who devise new methods 
-(when needed), or assist with data gathering/engineering, or provide analytic insight and/or assist with interpretation.</p>
+<p><strong>How do I submit data from my TeamLab into DASH?</strong></p>
+<p>Please <a href="mailto:dash@breakthroughcancer.org">contact the DASH team</a> when your TeamLab is ready to add data to DASH.
+We'll be happy to guide the process, starting with adding entries to the
+<a target=_blank
+href="https://breakthroughcancer.sharepoint.com/:x:/s/DataScienceHub/EXcr6XK3eTdEienLGINk6WQBxOI0Xdt78GhulUT9gXz-PQ?e=2VTl1d"> data submission tracker</a>
+and deciding which <a href="../#staging-area">staging method</a> is appropriate.  For more details, please see the
+   <a href="../#submitting-and-tracking">submission section of the data reference</a>.</p>
 </li>
 <li>
-<p><strong>What pipelines will be available to assist with my analysis?</strong>
+<p><strong>How can I see what data is in DASH or retrieve it for my work?</strong></p>
+<p>Development of a simple browser interface for exploring and downloading data is underway and a very high
+priority.  Until this is available you may use</p>
+<ul>
+<li>
+<p>The <a target=_blank
+href="https://breakthroughcancer.sharepoint.com/:x:/s/DataScienceHub/EXcr6XK3eTdEienLGINk6WQBxOI0Xdt78GhulUT9gXz-PQ?e=2VTl1d"> data tracker</a> to see what teams have submitted data and whether it is ready for download</p>
+</li>
+<li>
+<p>Command line tools to download directly from cloud buckets (<a href="mailto:dash@breakthroughcancer.org">contact the DASH team</a> for more details)</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>What pipelines will be available for analysis?</strong>
    This is discussed in <a href="../#analysis-and-pipelines">the data reference</a>.</p>
 </li>
 <li>
@@ -115,25 +128,35 @@ the overall view, at least initially while BTC finds its operational footing vis
    This is also discussed in <a href="../#analysis-and-pipelines">the data reference</a>.</p>
 </li>
 <li>
-<p><strong>Ideally, what kind of biospecimen metadata will be collected?</strong></p>
-<ul>
-<li>Sample acquisition method, e.g. autopsy, biopsy, fine needle aspirate, etc.</li>
-<li>Topography Code, indicating site within the body, e.g. based on ICD-O-3.</li>
-<li>Collection information e.g. time, duration of ischemia, temperature, etc.</li>
-<li>Processing of parent biospecimen information e.g. fresh, frozen, etc.</li>
-<li>Biospecimen and derivative clinical metadata I.e. Histologic Morphology Code, e.g. based on ICD-O-3.</li>
-<li>Coordinates for derivative biospecimen from their parent biospecimen.</li>
-<li>Processing of derivative biospecimen for downstream analysis e.g. dissociation, sectioning, analyte isolation 
-<br>
-<br></li>
-</ul>
-<p>This list is adapted from <a href="https://humantumoratlas.org/standard/biospecimen">HTAN standards</a> and is not intended 
-to be mandatory constraints imposed by the DST upon clinical trial teams or disease team labs; we are in the process
-of defining the minimum viable set of clinical data elements (CDEs) for BTC projects.</p>
+<p><strong>Who is responsible for data analysis within BTC disease team labs?</strong></p>
+<p>There is fuzzy overlap in responsibility for analysis:  it should be driven to the greatest extent possible by the
+disease teamlab, as reflected in their respective budgets, and supported by the Data Science TeamLab (DST)
+in whatever means necessary (whether computational analytics, data engineering, visualization, etc), but not
+wholly outsourced from the disease teamlab to the DST.</p>
+<p>Where that line is drawn for each scientific question or project will likely shift—and may also depend upon
+trial timelines and staffing—-probably in some cases the data scientists may need to pick up more of the
+analysis, in others less so.  But the overall view, at least initially while BTC finds its operational
+footing vis-à-vis data science, is that the DST is not “just another core, service-oriented facility,” but
+is a resource of expert collaborators who devise new methods (when needed), or assist with data
+gathering/engineering, or provide analytic insight and/or assist with interpretation.</p>
 </li>
 <li>
-<p><strong>How do I submit data from my TeamLab into DASH?</strong>
-   This is discussed in <a href="../#submitting-and-tracking">the data reference</a>.</p>
+<p><strong>What kind of biospecimen metadata will be collected?</strong></p>
+<p>This will likely be different for each trial, but ideally we aim to collect as much as possible, including:</p>
+<ul>
+<li>Sample acquisition method, e.g. autopsy, biopsy, fine needle aspirate, etc</li>
+<li>Topography Code, indicating site within the body, e.g. based on ICD-O-3</li>
+<li>Collection information e.g. time, duration of ischemia, temperature, etc</li>
+<li>Processing of parent biospecimen information e.g. fresh, frozen, etc</li>
+<li>Biospecimen and derivative clinical metadata I.e. Histologic Morphology Code, e.g. based on ICD-O-3</li>
+<li>Coordinates for derivative biospecimen from their parent biospecimen</li>
+<li>Processing of derivative biospecimen for downstream analysis e.g. dissociation, sectioning, analyte isolation 
+<br>
+<br>
+ This is adapted from <a href="https://humantumoratlas.org/standard/biospecimen">HTAN standards</a> and is not intended
+ to be mandatory constraints imposed by the DST upon clinical trial teams or disease team labs; we are in the
+ process of defining the minimum viable set of clinical data elements (CDEs) for BTC projects.</li>
+</ul>
 </li>
 </ol></div>
             </div>
@@ -214,5 +237,5 @@ of defining the minimum viable set of clinical data elements (CDEs) for BTC proj
     </body>
 </html>
 <center  style="font-size:.85em; color: #bababa; margin-top: -1.5em">
-2023_02_25_21:05:38
+2023_02_26_10:54:22
 </center>
