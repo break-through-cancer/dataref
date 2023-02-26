@@ -1,3 +1,8 @@
+
+<style>
+   .navbar { display: none; }
+</style>
+
 ## BTC Data Science in Brief
 The primary goal of the Data Science TeamLab (DST) within Break Through Cancer (BTC) is to unify BTC investigators
 around data and computation, into a collaborative network that will enhance and accelerate all disease research and

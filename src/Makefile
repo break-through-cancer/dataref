@@ -13,7 +13,7 @@ build:
 	    echo "`date \"+%Y_%m_%d_%H:%M:%S\"`" >> $$file ; \
 	    echo "</center>" >> $$file ; \
     done
-	cp -pr $(SITE_DIR)/* ../docs/.
+	cp -pfr $(SITE_DIR)/* ../docs/.
 	\rm -f ../docs/*~
 
 setup:
