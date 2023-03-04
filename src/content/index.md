@@ -42,12 +42,12 @@ data and software releases to further BTC goals.
 ---
 Please [contact the DASH team](mailto:dash@breakthroughcancer.org) when your TeamLab is ready to add data to DASH. We'll be happy to guide the process, starting with adding entries to the
 <a target=_blank
-href="https://breakthroughcancer.sharepoint.com/:x:/s/DataScienceHub/EXcr6XK3eTdEienLGINk6WQBxOI0Xdt78GhulUT9gXz-PQ?e=2VTl1d"> data submission tracker</a>
+href="https://breakthroughcancer.sharepoint.com/:x:/s/TeamLab-BreakThroughCancerInformation/EbuPxJkrvDxBpW0U0vtfTqMBT1GKwi1hze_akNR1yaVB8A?e=eBVHq4"> data submission tracker</a>
 and deciding which [staging method](#staging-area) is appropriate, as well as perform initial data validation; this
 may include verification with the TeamLab (and/or PI, etc) that the data are indeed eligible and ready for sharing,
 initial PHI assessment, verifying that trial-specific IDs (when applicable) have been entered into the
 <a target=_blank
-href="https://breakthroughcancer.sharepoint.com/:x:/s/DataScienceHub/EXcr6XK3eTdEienLGINk6WQBxOI0Xdt78GhulUT9gXz-PQ?e=2VTl1d"> data submission tracker</a> 
+href="https://breakthroughcancer.sharepoint.com/:x:/s/TeamLab-BreakThroughCancerInformation/EbuPxJkrvDxBpW0U0vtfTqMBT1GKwi1hze_akNR1yaVB8A?e=eBVHq4"> data submission tracker</a>
 and associated with corresponding BTC identifiers, and that sufficient metadata are captured.
 
 In addition to surfacing the inventory of data being readied for inclusion in DASH, the tracker will also indicate through what
@@ -99,7 +99,7 @@ Development of a simple browser interface for exploring and downloading data is 
 priority.  Until this is available you may use
 
 - The <a target=_blank
-href="https://breakthroughcancer.sharepoint.com/:x:/s/DataScienceHub/EXcr6XK3eTdEienLGINk6WQBxOI0Xdt78GhulUT9gXz-PQ?e=2VTl1d"> data tracker</a> to see what teams have submitted data and whether it is ready for download
+href="https://breakthroughcancer.sharepoint.com/:x:/s/TeamLab-BreakThroughCancerInformation/EbuPxJkrvDxBpW0U0vtfTqMBT1GKwi1hze_akNR1yaVB8A?e=eBVHq4"> data tracker</a> to see what teams have submitted data and whether it is ready for download
 
 - Programmatic tools to download directly from cloud buckets ([contact the DASH team](mailto:dash@breakthroughcancer.org) for more details)
 
