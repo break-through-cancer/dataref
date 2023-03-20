@@ -10,7 +10,7 @@
 
     Please [contact the DASH team](mailto:dash@breakthroughcancer.org) when your TeamLab is ready to add data to DASH.
     We'll be happy to guide the process, starting with adding entries to the
-<a target=_blank href="https://breakthroughcancer.sharepoint.com/:x:/s/TeamLab-BreakThroughCancerInformation/EbuPxJkrvDxBpW0U0vtfTqMBT1GKwi1hze_akNR1yaVB8A?e=eBVHq4"> data submission tracker</a>
+<a target=_blank href="https://breakthroughcancer.sharepoint.com/:x:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/DASH-Data-Submission-Inventory.xlsx?d=w99c48fbbbc2b413ca56d14d2fb5f4ea3&csf=1&web=1&e=XPsARu"> data submission tracker</a>
 and deciding which [staging method](index.md#staging-area) is appropriate.  For more details, please see the
    [submission section of the data reference](index.md#submitting-and-tracking).
 

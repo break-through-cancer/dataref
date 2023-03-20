@@ -42,12 +42,12 @@ data and software releases to further BTC goals.
 ---
 Please [contact the DASH team](mailto:dash@breakthroughcancer.org) when your TeamLab is ready to add data to DASH. We'll be happy to guide the process, starting with adding entries to the
 <a target=_blank
-href="https://breakthroughcancer.sharepoint.com/:x:/s/TeamLab-BreakThroughCancerInformation/EbuPxJkrvDxBpW0U0vtfTqMBT1GKwi1hze_akNR1yaVB8A?e=eBVHq4"> data submission tracker</a>
+href="https://breakthroughcancer.sharepoint.com/:x:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/DASH-Data-Submission-Inventory.xlsx?d=w99c48fbbbc2b413ca56d14d2fb5f4ea3&csf=1&web=1&e=XPsARu">data submission tracker</a>
 and deciding which [staging method](#staging-area) is appropriate, as well as perform initial data validation; this
 may include verification with the TeamLab (and/or PI, etc) that the data are indeed eligible and ready for sharing,
 initial PHI assessment, verifying that trial-specific IDs (when applicable) have been entered into the
 <a target=_blank
-href="https://breakthroughcancer.sharepoint.com/:x:/s/TeamLab-BreakThroughCancerInformation/EbuPxJkrvDxBpW0U0vtfTqMBT1GKwi1hze_akNR1yaVB8A?e=eBVHq4"> data submission tracker</a>
+href="https://breakthroughcancer.sharepoint.com/:x:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/DASH-Data-Submission-Inventory.xlsx?d=w99c48fbbbc2b413ca56d14d2fb5f4ea3&csf=1&web=1&e=XPsARu"> data submission tracker</a>
 and associated with corresponding BTC identifiers, and that sufficient metadata are captured.
 
 In addition to surfacing the inventory of data being readied for inclusion in DASH, the tracker will also indicate through what
@@ -98,8 +98,7 @@ data lake but rather via downstream database queries, dashboards or visual-explo
 Development of a simple browser interface for exploring and downloading data is underway and a very high
 priority.  Until this is available you may use
 
-- The <a target=_blank
-href="https://breakthroughcancer.sharepoint.com/:x:/s/TeamLab-BreakThroughCancerInformation/EbuPxJkrvDxBpW0U0vtfTqMBT1GKwi1hze_akNR1yaVB8A?e=eBVHq4"> data tracker</a> to see what teams have submitted data and whether it is ready for download
+- The <a target=_blank href="https://breakthroughcancer.sharepoint.com/:x:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/DASH-Data-Submission-Inventory.xlsx?d=w99c48fbbbc2b413ca56d14d2fb5f4ea3&csf=1&web=1&e=XPsARu"> data tracker</a> to see what teams have submitted data and whether it is ready for download
 
 - Programmatic tools to download directly from cloud buckets ([contact the DASH team](mailto:dash@breakthroughcancer.org) for more details)
 
@@ -218,5 +217,5 @@ In the latter case of external data being assigned BTC IDs, a unique project abb
 
 but should not be interpreted as a claim that BTC now “owns” or is attempting to “re-brand” those external data.
 
-## Version 0.53
+## Version 0.53.1
 
