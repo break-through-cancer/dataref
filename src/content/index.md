@@ -88,9 +88,9 @@ data lake but rather via downstream database queries, dashboards or visual-explo
 Development of dashboards and a simple browser interface for exploring and downloading data is underway and a very high priority.  Until 
 these are available please
 
-- [Contact the DASH team](mailto:dash@breakthroughcancer.org) for details
+- [Contact the DASH team](mailto:dash@breakthroughcancer.org) for details, OR
 
-- Or use programmatic tools to download directly from cloud buckets, again ([contacting the DASH team](mailto:dash@breakthroughcancer.org) for more details.
+- Use programmatic tools to download directly from cloud buckets in DASH
 
 ## Warehouse
 ---
