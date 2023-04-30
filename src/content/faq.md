@@ -8,11 +8,9 @@
 
 1. **How do I submit data from my TeamLab into DASH?**
 
-    Please [contact the DASH team](mailto:dash@breakthroughcancer.org) when your TeamLab is ready to add data to DASH.
-    We'll be happy to guide the process, starting with adding entries to the
-<a target=_blank href="https://breakthroughcancer.sharepoint.com/:x:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/DASH-Data-Submission-Inventory.xlsx?d=w99c48fbbbc2b413ca56d14d2fb5f4ea3&csf=1&web=1&e=XPsARu"> data submission tracker</a>
-and deciding which [staging method](index.md#staging-area) is appropriate.  For more details, please see the
-   [submission section of the data reference](index.md#submitting-and-tracking).
+    Please contact either the BTC PM team or [the DASH team](mailto:dash@breakthroughcancer.org) when data are ready to be
+	shared within your TeamLab via DASH--whether clinical, pre-clinical or publication data.  We'll be happy to guide the
+	process, as discessed in the [data submission section of the data reference](index.md#submitting-data).
 
 2. **How can I see what data is in DASH or retrieve it for my work?**
 

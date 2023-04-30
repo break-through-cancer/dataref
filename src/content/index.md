@@ -38,22 +38,12 @@ However, that work directly supports [pipelined analyses](#analysis-and-pipeline
 moving rightward, and we are committed to an iterative, [agile-inspired process](https://agilemanifesto.org) of frequent
 data and software releases to further BTC goals.
 
-## Submitting and Tracking
+## Submitting Data
 ---
-Please [contact the DASH team](mailto:dash@breakthroughcancer.org) when your TeamLab is ready to add data to DASH. We'll be happy to guide the process, starting with adding entries to the
-<a target=_blank
-href="https://breakthroughcancer.sharepoint.com/:x:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/DASH-Data-Submission-Inventory.xlsx?d=w99c48fbbbc2b413ca56d14d2fb5f4ea3&csf=1&web=1&e=XPsARu">data submission tracker</a>
-and deciding which [staging method](#staging-area) is appropriate, as well as perform initial data validation; this
-may include verification with the TeamLab (and/or PI, etc) that the data are indeed eligible and ready for sharing,
-initial PHI assessment, verifying that trial-specific IDs (when applicable) have been entered into the
-<a target=_blank
-href="https://breakthroughcancer.sharepoint.com/:x:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/DASH-Data-Submission-Inventory.xlsx?d=w99c48fbbbc2b413ca56d14d2fb5f4ea3&csf=1&web=1&e=XPsARu"> data submission tracker</a>
-and associated with corresponding BTC identifiers, and that sufficient metadata are captured.
+Please contact either the BTC PM team or [the DASH team](mailto:dash@breakthroughcancer.org) when data are ready to be shared within your TeamLab via DASH--whether clinical, pre-clinical or publication data.  We'll be happy to guide the process, help decide which [staging method](#staging-area) is appropriate, as well as perform initial data validation; this validation may include verification with the TeamLab (and/or PI, etc) that the data are unencumbered (i.e. eligible and ready for sharing), initial PHI assessment, verifying that trial-specific IDs (when applicable) have been generated so that the data may be tracked, and that sufficient metadata are captured.
 
-In addition to surfacing the inventory of data being readied for inclusion in DASH, the tracker will also indicate through what
-phase each dataset has progressed rightward during its life cycle. While the data SOP remains under development and not fully
-operational, this process may take a week or more after initial submission; but the tracker will reflect when data are
-accessible to the given teamlab via dashboards and available for download through the
+While the data submission SOP remains under development and not fully operational, this process may take a week or more after initial submission; but DASH will reflect when data are
+accessible to the given Teamlab via dashboards and available for download through the
 [data browser](https://dash.breakthroughcancer.org/data_browser), and eventually explorable in familiar tools like
 <a target=_blank href="https://www.cbioportal.org">cBioPortal</a>,
 <a target=_blank href="https://cellxgene.cziscience.com">cellxgene</a>, or 
@@ -95,12 +85,12 @@ data lake but rather via downstream database queries, dashboards or visual-explo
 
 ## Browse
 ---
-Development of a simple browser interface for exploring and downloading data is underway and a very high
-priority.  Until this is available you may use
+Development of dashboards and a simple browser interface for exploring and downloading data is underway and a very high priority.  Until 
+these are available please
 
-- The <a target=_blank href="https://breakthroughcancer.sharepoint.com/:x:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/DASH-Data-Submission-Inventory.xlsx?d=w99c48fbbbc2b413ca56d14d2fb5f4ea3&csf=1&web=1&e=XPsARu"> data tracker</a> to see what teams have submitted data and whether it is ready for download
+- [Contact the DASH team](mailto:dash@breakthroughcancer.org) for details
 
-- Programmatic tools to download directly from cloud buckets ([contact the DASH team](mailto:dash@breakthroughcancer.org) for more details)
+- Or use programmatic tools to download directly from cloud buckets, again ([contacting the DASH team](mailto:dash@breakthroughcancer.org) for more details.
 
 ## Warehouse
 ---
@@ -217,5 +207,5 @@ In the latter case of external data being assigned BTC IDs, a unique project abb
 
 but should not be interpreted as a claim that BTC now “owns” or is attempting to “re-brand” those external data.
 
-## Version 0.53.1
+## Version 0.53.2
 
