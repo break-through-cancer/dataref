@@ -207,5 +207,5 @@ In the latter case of external data being assigned BTC IDs, a unique project abb
 
 but should not be interpreted as a claim that BTC now “owns” or is attempting to “re-brand” those external data.
 
-## Version 0.53.2
+## Version 0.54.0
 

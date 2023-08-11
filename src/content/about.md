@@ -3,9 +3,18 @@
    .navbar { display: none; }
 </style>
 
+## DASH Overview
+Welcome to DASH, the **DA**ta **S**cience **H**ub portal in Break *Through* Cancer (BTC).  DASH is meant
+as a central reference point for data science across the BTC network, and currently provides a broad set
+of background information on the aims and composition of the Data Science TeamLab, how we hope to work
+in concert with the disease TeamLabs across BTC, as well as comprehensive documention on data generation
+standards and infrastructure.  Additional functionality is actively being developed, including high-level
+data dashboards, computational analysis methods, pipelines, tools and documentation for data upload/download,
+and more.  Please come back regularly!
+
 ## BTC Data Science in Brief
-The primary goal of the Data Science TeamLab (DST) within Break Through Cancer (BTC) is to unify BTC investigators
-around data and computation, into a collaborative network that will enhance and accelerate all disease research and
+The primary goal of the Data Science TeamLab (DST) in BTC is to unify BTC investigators around data and
+computation, into a collaborative network that will enhance and accelerate all disease research and
 discovery objectives.
 <center>
 ![data-science-aims](img/aims.png)
