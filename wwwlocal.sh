@@ -12,8 +12,8 @@ if [ ! -d docs ] ; then
 fi
 
 cd docs
-python3 -m http.server & 
+python3 -m http.server 9191 & 
 
 if [ `uname -s` = 'Darwin' ] ; then 
-    open http://localhost:8000
+    open http://localhost:9191
 fi
