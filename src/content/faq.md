@@ -6,23 +6,25 @@
 ## BTC Data Science Frequently Asked Questions
 <hr>
 
-1. **How do I submit data from my TeamLab into DASH?**
+1. **How should my TeamLab plan to share data in DASH?**
 
-    Please contact either the BTC PM team or [the DASH team](mailto:dash@breakthroughcancer.org) when data are ready to be
-	shared within your TeamLab via DASH--whether clinical, pre-clinical or publication data.  We'll be happy to guide the
-	process, as discessed in the [data submission section of the data reference](index.md#submitting-data).
+	See the [planning section of the data reference](index.md#planning-for-data-sharing).
 
-2. **How can I see what data is in DASH or retrieve it for my work?**
+2. **How do I share/submit data in DASH?**
 
-    Please see the [browsing section of the data reference](index.md#browse).
+	See the [data submission section of the data reference](index.md#submitting-data).
 
-3. **What pipelines will be available for analysis?**
+3. **How can I see what data is in DASH or retrieve it for my work?**
+
+    Please see the [access section of the data reference](index.md#accessing-data).
+
+4. **What pipelines will be available for analysis?**
    This is discussed in [the data reference](index.md#analysis-and-pipelines).
 
-4. **What assays (data types) will the pipelines operate upon?**
+5. **What assays (data types) will the pipelines operate upon?**
    This is also discussed in [the data reference](index.md#analysis-and-pipelines).
 
-5. **Who is responsible for data analysis within BTC disease team labs?**
+6. **Who is responsible for data analysis within BTC disease team labs?**
 
     There is fuzzy overlap in responsibility for analysis:  it should be driven to the greatest extent possible by the
     disease teamlab, as reflected in their respective budgets, and supported by the Data Science TeamLab (DST)
@@ -36,7 +38,7 @@
 	is a resource of expert collaborators who devise new methods (when needed), or assist with data
 	gathering/engineering, or provide analytic insight and/or assist with interpretation.
 
-6. **What kind of biospecimen metadata will be collected?**
+7. **What kind of biospecimen metadata will be collected?**
 
      This will likely be different for each trial, but ideally we aim to collect as much as possible, including:
 
