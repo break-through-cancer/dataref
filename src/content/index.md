@@ -59,7 +59,8 @@ and the mapping between the two will be retained internally by DASH.
 
 ## Accessing Data
 ---
-Both staged and curated data are summarized in our high-level DASHboard
+Both staged and curated data are summarized in our
+<a target="#" href="https:board.breakthroughcancer.org">high-level DASHBoard</a>
 ![dash-board](img/dash-board.png)
 This plus a visual browser with simple point-click downloading will be demonstrated
 at the 2023 BTC Summit.  In the meantime, data may be downloaded programmatically using
@@ -178,5 +179,5 @@ In the latter case of external data being assigned BTC IDs, a unique project abb
 
 but should not be interpreted as a claim that BTC now “owns” or is attempting to “re-brand” those external data.
 
-## Version 0.6.0
+## Version 0.6.1
 
