@@ -60,7 +60,7 @@ and the mapping between the two will be retained internally by DASH.
 ## Accessing Data
 ---
 Both staged and curated data are summarized in our
-<a target="#" href="https:board.breakthroughcancer.org">high-level DASHBoard</a>
+<a target="_blank" href="https://board.breakthroughcancer.org">high-level DASHBoard</a>
 ![dash-board](img/dash-board.png)
 This plus a visual browser with simple point-click downloading will be demonstrated
 at the 2023 BTC Summit.  In the meantime, data may be downloaded programmatically using
