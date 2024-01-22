@@ -9,3 +9,10 @@ site_dir: dataref
 
 extra_css:
     - extra.css
+
+markdown_extensions:
+  - pymdownx.superfences:
+    custom_fences:
+      - name: csv-path
+        class: csv-path
+        format: !!python/name:tools.pymdownx_md_render.md_csv_path_render

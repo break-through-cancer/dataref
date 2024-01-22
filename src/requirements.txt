@@ -1,1 +1,5 @@
 mkdocs
+tabulate
+markdown
+pandas
+pymdown-extensions

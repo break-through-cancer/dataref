@@ -47,6 +47,11 @@ abstraction: a semi-organized collection of storage bins, stratified by TeamLab,
 "as is," with little (or no) formal validation or annotation.  TeamLab members may elect to use such staged data
 immediately, prior to further curation, as needs dictate.
 
+## Metadata Submission
+```csv-path
+./projects/dash_db/app/model_files/Sage_HTAN.csv
+```
+
 ## Data Curation
 ---
 
