@@ -1,5 +1,3 @@
 mkdocs
-tabulate
-markdown
-pandas
-pymdown-extensions
+mkdocs-table-reader-plugin
+pyarrow

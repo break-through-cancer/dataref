@@ -6,7 +6,7 @@ FAQ=$(SITE_DIR)/faq/index.html
 ABOUT=$(SITE_DIR)/about/index.html
 
 build:
-	python -m mkdocs build
+	mkdocs build
 	@for file in $(TOP) $(FAQ) $(ABOUT) ; do \
 		echo "Adding build date to $$file ..." ; \
 	    echo '<center  style="font-size:.85em; color: #bababa; margin-top: -1.5em">' >> $$file ; \
