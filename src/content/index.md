@@ -48,8 +48,8 @@ abstraction: a semi-organized collection of storage bins, stratified by TeamLab,
 immediately, prior to further curation, as needs dictate.
 
 ## Metadata Submission
-{{ read_csv('projects/dash_db/app/model_files/Sage_HTAN.csv') }}
-```
+{{ read_csv('projects/dash_db/app/model_files/sage_HTAN.csv') }}
+
 
 ## Data Curation
 ---
