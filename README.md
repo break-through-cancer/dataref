@@ -6,10 +6,11 @@ is beneath the `src` directory.  The general workflow is
 - `cd src`
 - edit files within `content` subdirectory
 - type `make` and view locally with a browser
-- to view local `cd ..`
-- run `source wwwlocal.sh`
+- run `source ../wwwlocal.sh`
 - site will now be hosted at localhost:9191
 - iterate
+
+If you are running into errors during build, check that your version of mkdocs and pip are the same. If they are not, add correct mkdocs path to PATH.
 
 When you are ready to check in changes, then
 
