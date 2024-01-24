@@ -9,7 +9,3 @@ site_dir: dataref
 
 extra_css:
     - extra.css
-
-plugins:
-  - search
-  - table-reader

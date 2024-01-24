@@ -48,8 +48,9 @@ abstraction: a semi-organized collection of storage bins, stratified by TeamLab,
 immediately, prior to further curation, as needs dictate.
 
 ## Metadata Submission
-{{ read_csv('projects/dash_db/app/model_files/sage_HTAN.csv') }}
+---
 
+Metadata is valuable, because how else would you know what type of cancer the subject had, whether the sample used to generate the data was from normal or tumor tissue, or what read depth the sequencer was programmed at. The list of accepted metadata fields can be downloaded by clicking this <a href="../projects/dash_db/app/model_files/sage_HTAN.csv" download>link</a>. Our corpus is adopted from existing standards, and grows or changes depending on the specific needs of BTC projects.
 
 ## Data Curation
 ---
