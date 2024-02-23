@@ -16,7 +16,7 @@
 
 3. **How can I see what data is in DASH or retrieve it for my work?**
 
-    Please see the [access section of the data reference](index.md#accessing-data).
+    Visit the [DASH Board](https://board.breakthroughcancer.org) and [Browse](https://data.breakthroughcancer.org) tools.
 
 4. **What pipelines will be available for analysis?**
    This is discussed in [the data reference](index.md#analysis-and-pipelines).

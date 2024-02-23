@@ -136,7 +136,7 @@
               </ul>
             </li>
             
-            <li class="nav-item" data-level="2"><a href="#version-061" class="nav-link">Version 0.6.1</a>
+            <li class="nav-item" data-level="2"><a href="#version-070" class="nav-link">Version 0.7.0</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -203,34 +203,35 @@ and the mapping between the two will be retained internally by DASH.</p>
 <p>Both staged and curated data are summarized in our
 <a target="_blank" href="https://board.breakthroughcancer.org">high-level DASHBoard</a>
 <img alt="dash-board" src="img/dash-board.png" />
-This plus a visual browser with simple point-click downloading will be demonstrated
-at the 2023 BTC Summit.  In the meantime, data may be downloaded programmatically using
-the cloud utilities described in the
-<a target="#" href="https://breakthroughcancer.sharepoint.com/:b:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/DASH-DataSubmission-Technical-Instructions.pdf?csf=1&web=1&e=dzPNjr">technical instructions for data sharing</a>.  For example, programmatic access to the underlying
-<a target=_blank href="https://cloud.google.com/storage/docs/buckets">cloud bucket storage</a>
-is often used for systematic analysis in pipelines and tools where the medium of exchange is at
-the coarse grained level of entire files.</p>
-<p>Finally, recall that staged data are offered "as is," while curated data will soon support more advanced
-use cases such as querying with fine-grained parameters (e.g. gene name) or visual exploration in
-familiar tools like
+and may be downloaded interactively from the
+<a target="_blank" href="https://data.breakthroughcancer.org">data browser</a> 
+<img alt="dash-browse" src="img/dash-browse.png" />
+or programmatically via
+<a href="https://cloud.google.com/sdk/gcloud/reference/storage">gcloud</a> or
+<a href="https://cloud.google.com/storage/docs/gsutil">gsutil</a> for many, large files or pipelined analysis.
+Additional information is available in the
+<a target="#" href="https://breakthroughcancer.sharepoint.com/:b:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/DASH-DataSubmission-Technical-Instructions.pdf?csf=1&web=1&e=dzPNjr">technical instructions for data sharing</a>. Finally, recall that staged data are offered "as is," while curated data will soon support more advanced use cases such as querying with 
+fine-grained parameters (e.g. gene name) or visual exploration in familiar tools like
 <a target=_blank href="https://www.cbioportal.org">cBioPortal</a>,
 <a target=_blank href="https://cellxgene.cziscience.com">cellxgene</a>, or
 <a target=_blank href="https://www.cycif.org/software/minerva">Minerva</a> as appropriate.</p>
 <h2 id="analysis-and-pipelines">Analysis and Pipelines</h2>
 <hr />
-<p>To guide data generation and analysis the DST has established
-<a target=_blank href="https://breakthroughcancer.sharepoint.com/:x:/s/BreakThroughCancerStaff/Ef9cmbzRyaZIo82GR-siTPUBmjd2x9lE-nKo3MbCbpqH_g?e=sptYZs">Protocol and Analysis working groups</a> with disease teams, which aim to:
-identify needs cutting across TeamLabs, align common SOPs for data generation and QC, coordinate changes as
-new technologies and needs arise, tie each central analytic pipeline to consumers of its data in each
-TeamLab, and perform regular check-ins to ensure analytic approaches continue to suit disease TeamLab
-objectives.</p>
-<p>For each data type generated across two or more TeamLabs the DST will provide best-practices pipelines and/or
+<p>The DST has established joint
+<a target=_blank href="https://breakthroughcancer.sharepoint.com/:x:/s/BreakThroughCancerStaff/Ef9cmbzRyaZIo82GR-siTPUBmjd2x9lE-nKo3MbCbpqH_g?e=sptYZs">Protocol and Analysis working groups</a> with disease teams, to: identify analysis needs across TeamLabs,
+align common SOPs for data generation and QC, coordinate changes as new technologies and needs arise, tie each central analytic
+pipeline to consumers of its data in each TeamLab, and perform regular check-ins to ensure analytic approaches continue to 
+suit disease TeamLab objectives.</p>
+<p>For each data type generated across two or more TeamLabs, the DST will provide best-practices pipelines and/or
 tools for each <a href="#omic-data-levels">data level</a>: from Levels 1 and 2 primary data generation (L1, L2) through
-subsequent L3 and L4 analyses.  This work is still early but very active, and a number of analysis pipelines
-are already available from
-<a href="https://broadinstitute.github.io/warp/docs/get-started/">Terra</a>, MDAnderson, <a href="https://nf-co.re">NextFlow nf-core</a>
-and the <a href="https://openwetware.org/wiki/BioMicroCenter">MIT BioMicroCenter</a>.  Please contact the
-<a href="mailto:dash@breakthroughcancer.org">DASH team</a> for more information if you are unsure of how to proceed.</p>
+subsequent L3 and L4 analyses.  This work is very active, and a number of analysis pipelines are already available
+from <a href="https://broadinstitute.github.io/warp/docs/get-started/">DFCI</a>, JHU, MDAnderson, <a href="https://nf-co.re">NextFlow nf-core</a>
+and the <a href="https://openwetware.org/wiki/BioMicroCenter">MIT BioMicroCenter</a>.</p>
+<p>As these and other pipelines harden into robust, self-service tools they are also being added to a common analysis workflow
+under construction in <a href="https://cirro.bio/">Cirro</a>.  The Cirro platform runs NextFlow and WDL pipelines, and provides powerful
+tools for computationalists in a modern, easy-to-use interface that is also approachable for non-computationalists.  The DST 
+is already conducting targeted pipelined data analysis in Cirro and expects to make an MVP version broadly available to BTC 
+in Q2 of 2024.  Please contact the <a href="mailto:dash@breakthroughcancer.org">DASH team</a> for more information.</p>
 <h2 id="btc-identifier-scheme">BTC Identifier Scheme</h2>
 <hr />
 <p>As data are added to DASH they will be tagged with subject and sample (biospecimen) identifiers as follows:
@@ -306,7 +307,7 @@ including single-cell and single-nucleus RNA Seq (sc/snRNASeq), single-cell ATAC
 <li>And simplifying later bookkeeping and database tracing when assembling data for publication</li>
 </ul>
 <p>but should not be interpreted as a claim that BTC now “owns” or is attempting to “re-brand” those external data.</p>
-<h2 id="version-061">Version 0.6.1</h2></div>
+<h2 id="version-070">Version 0.7.0</h2></div>
             </div>
         </div>
 
@@ -389,8 +390,8 @@ including single-cell and single-nucleus RNA Seq (sc/snRNASeq), single-cell ATAC
 
 <!--
 MkDocs version : 1.5.2
-Build Date UTC : 2023-11-04 00:16:54.765986+00:00
+Build Date UTC : 2024-02-23 23:01:07.308909+00:00
 -->
 <center  style="font-size:.85em; color: #bababa; margin-top: -1.5em">
-2023_11_03_20:16:54
+2024_02_23_18:01:07
 </center>

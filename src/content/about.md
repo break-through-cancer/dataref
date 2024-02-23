@@ -4,13 +4,13 @@
 </style>
 
 ## DASH Overview
-Welcome to DASH, the **DA**ta **S**cience **H**ub portal in Break *Through* Cancer (BTC).  DASH is meant
-as a central reference point for data science across the BTC network, and currently provides a broad set
-of background information on the aims and composition of the Data Science TeamLab, how we hope to work
-in concert with the disease TeamLabs across BTC, as well as comprehensive documention on data generation
-standards and infrastructure.  Additional functionality is actively being developed, including high-level
-data dashboards, computational analysis methods, pipelines, tools and documentation for data upload/download,
-and more.  Please come back regularly!
+Welcome to DASH, the **DA**ta **S**cience **H**ub portal in Break *Through* Cancer (BTC).
+DASH is meant to be a central reference for data science across the BTC network, providing
+an easy-to-remember, one-stop access point for: [data](https://board.breakthroughcancer.org)
+and (soon) [analyses](index.md#analysis-and-pipelines), as well as information on the aims
+and composition of the Data Science TeamLab (DST), how we will work in concert with the disease
+TeamLabs across BTC, and comprehensive standards and documention on data generation and
+infrastructure.  Each facet of DASH is evolving very rapidly, so please come back regularly!
 
 ## BTC Data Science in Brief
 The primary goal of the Data Science TeamLab (DST) in BTC is to unify BTC investigators around data and
@@ -41,12 +41,12 @@ thus constitutes a unique and transformative multi-institutional initiative that
 - create a collaborative network of data science investigators and trainees to power these objectives
 
 For more details, please see the
-<a target=_blank href="https://breakthroughcancer-my.sharepoint.com/:b:/g/personal/msn_breakthroughcancer_org/EV7qf7tHVRpMoFaCgpI_owwBAzJ-BsvEBHjkVcEr74WSRw?e=lc2A8r">full data science proposal here.</a>
+<a target=_blank href="https://breakthroughcancer.sharepoint.com/:b:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/Governance/Data_Science_Hub_Proposal.pdf?csf=1&web=1&e=tPU3lK">full data science proposal here.</a>
 
 ## How We'll Work Together
 
 As noted in 
-<a target=_blank href="https://breakthroughcancer-my.sharepoint.com/:p:/g/personal/msn_breakthroughcancer_org/EUqmcKyDJ_9CnmDDYxpNzTABMoXnNuAIImZY6uq0ereRSQ?e=GEtr6f" >
+<a target=_blank href="https://breakthroughcancer.sharepoint.com/:p:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/Governance/2022-10-12_BTC_DataScienceHub_Kickoff-Excerpt.pptx?d=w01a7224e5a4b49959408b653b5b865c4&csf=1&web=1&e=W4oIIe">
 these slides excerpted from our kickoff</a>, the Data Science TeamLab sees itself as
 
 * Facilitators of disease TeamLab science
@@ -72,9 +72,6 @@ We are fortunate to have the talents of [Benjamin Greenbaum](mailto:greenbab@msk
 * **Aim 5 - Pan-cancer Analysis:** [Linghua Wang](mailto:lwang22@mdanderson.org), [Rameen Beroukhim](mailto:rameen@broadinstitute.org)
 
 * **Aim 6 - BTC Data Science Network:** [Kadir Akdemir](mailto:kcakedemir@mdanderson.org), [Elana Fertig](mailto:ejfertig@jhmi.edu)
-
-These subgroups are still in the early stages but are gathering on a bi-weekly to monthly cadence and have an active presence across disease TeamLabs.  For reference, the
-<a target=_blank href="https://breakthroughcancer-my.sharepoint.com/:x:/g/personal/msn_breakthroughcancer_org/Ec0H2cIe8B9Kly-gewaYudQBqiozgNN6U-fzcJWh-JlwSQ?e=1Yw69v">list of Data Science Team members and email addresses is here</a>.
 
 ## Data Infrastructure
 
