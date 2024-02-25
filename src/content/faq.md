@@ -16,13 +16,17 @@
 
 3. **How can I see what data is in DASH or retrieve it for my work?**
 
-    Visit the [DASH Board](https://board.breakthroughcancer.org) and [Browse](https://data.breakthroughcancer.org) tools.
+    For interactive exploration, visit the [DASH Board](https://board.breakthroughcancer.org)
+	and [Browse](https://data.breakthroughcancer.org) tools.  For large-scale downloads or
+	pipelined analysis, use the [programmatic methods as described here](index.md#accessing-data).
 
 4. **What pipelines will be available for analysis?**
-   This is discussed in [the data reference](index.md#analysis-and-pipelines).
+
+    This is discussed in [the data reference](index.md#analysis-and-pipelines).
 
 5. **What assays (data types) will the pipelines operate upon?**
-   This is also discussed in [the data reference](index.md#analysis-and-pipelines).
+
+    This is also discussed in [the data reference](index.md#analysis-and-pipelines).
 
 6. **Who is responsible for data analysis within BTC disease team labs?**
 

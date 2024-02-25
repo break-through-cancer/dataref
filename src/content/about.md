@@ -6,8 +6,9 @@
 ## DASH Overview
 Welcome to DASH, the **DA**ta **S**cience **H**ub portal in Break *Through* Cancer (BTC).
 DASH is meant to be a central reference for data science across the BTC network, providing
-an easy-to-remember, one-stop access point for: [data](https://board.breakthroughcancer.org)
-and (soon) [analyses](index.md#analysis-and-pipelines), as well as information on the aims
+an easy-to-remember, one-stop access point for: computational methods,
+[analysis piplines](index.md#analysis-and-pipelines), and
+[data](https://board.breakthroughcancer.org), as well as information on the aims
 and composition of the Data Science TeamLab (DST), how we will work in concert with the disease
 TeamLabs across BTC, and comprehensive standards and documention on data generation and
 infrastructure.  Each facet of DASH is evolving very rapidly, so please come back regularly!

@@ -91,11 +91,12 @@ from [DFCI](https://broadinstitute.github.io/warp/docs/get-started/), JHU, MDAnd
 and the [MIT BioMicroCenter](https://openwetware.org/wiki/BioMicroCenter).
 
 As these and other pipelines harden into robust, self-service tools they are also being added to a common analysis workflow
-under construction in [Cirro](https://cirro.bio/).  The Cirro platform runs NextFlow and WDL pipelines, and provides powerful
-tools for computationalists in a modern, easy-to-use interface that is also approachable for non-computationalists.  The DST 
-is already conducting targeted pipelined data analysis in Cirro and expects to make an MVP version broadly available to BTC 
-in Q2 of 2024.  Please contact the [DASH team](mailto:dash@breakthroughcancer.org) for more information.
-
+under construction in [Cirro](https://cirro.bio/).
+![cirro-pipeline-analysis-platform](img/cirro-aims.png)
+The Cirro platform runs NextFlow and WDL pipelines, and provides powerful tools for computationalists in a modern,
+easy-to-use interface that is also approachable for non-computationalists.  The DST has already installed approximately
+20 pipeline configurations into Cirro, and is conducting targeted data analysis with the expectation to make an MVP
+version broadly available to BTC in Q2 of 2024.  Please contact the [DASH team](mailto:dash@breakthroughcancer.org) if you would like to contribute pipelines, perform analyses, or would simply like more information.
 
 ## BTC Identifier Scheme
 ---
