@@ -21,10 +21,12 @@ NIH guidelines</a>
 ## Data Life Cycle
 ---
 ![data-life-cycle](img/data-life-cycle.png)
-This will be described in more detail below, but first note that within BTC the flow of data naturally subdivides along the boundaries of institutional and BTC-wide ecosystems:
+Within BTC the flow of data naturally subdivides along the boundaries of institutional and BTC-wide ecosystems:
 
-*   **Institutional:**  data, research, and clinical trial activity typically within the walls of a single instution, performed upon and annotated by institutional systems per their internal practice
+*   **Institutional:**  data, research, and clinical trial activity typically within the walls of a single instution, performed upon and annotated by institutional systems per their internal practice.  Some examples of this could be pre-clinical or basic research results from a single PI lab, or the exported and de-indentified data from a clinical trial data system.
 *   **DASH:**  data shared by TeamLabs across institutional boundaries, by way of **DASH**
+
+How DASH maintains identifiers for and provenance of these data is [described in more detail below](index.md#btc-identifier-scheme).
 
 ## Planning for Data Sharing
 ---
@@ -50,12 +52,14 @@ immediately, prior to further curation, as needs dictate.
 ## Data Curation
 ---
 
-After staging, many (but not necessarily all) BTC datasets will also be curated, which includes steps such as: validating that
-submitted files do not include PHI, verifying that trial-specific IDs (when applicable) have been associated so that
-the data may be tracked, and ensuring sufficient metadata have been submitted so that others may productively use the data.
-BTC-specific IDs will also be assigned within the DASH database to maintain provenance and promote data governance (such as
-sandboxed use during embargo periods). These IDs supplement, rather than replace, institutional or trial-specific IDs,
-and the mapping between the two will be retained internally by DASH.
+After staging, many (but not necessarily all) BTC datasets will also be curated, which includes steps such as: validating that shared files do not include PHI, verifying that trial-specific IDs (when applicable) have been associated
+so that the data may be tracked, and ensuring sufficient metadata have been submitted so that others may productively
+use the data.  As [described below](index.md#btc-identifier-scheme), BTC-specific IDs will also be assigned
+within the DASH database to maintain provenance, enable pan-cancer analysis, and promote data governance
+(such as sandboxed
+use during embargo periods). These BTC IDs supplement, rather than replace, any IDs attached at the point of
+data origination (e.g. in a clinical trial or PI lab) and the mapping between the two will be retained
+internally by DASH as metadata.
 
 ## Accessing Data
 ---
@@ -101,13 +105,20 @@ version broadly available to BTC in Q2 of 2024.  Please contact the [DASH team](
 ## BTC Identifier Scheme
 ---
 
-As data are added to DASH they will be tagged with subject and sample (biospecimen) identifiers as follows:
+As data are added to DASH they are tagged with subject and sample (biospecimen) identifiers as follows:
 ![btc-id-scheme](img/btc-id-scheme.png)
-At minimum such IDs will be attached to BTC trial data; ideally to BTC pre-clinicial data as well, and potentially to external data as appropriate. Note that here “biospecimen” is preferred over “sample” for generality and to capture that samples can be subdivided into multiple portions. The association between data file and biospecimen is maintained as
+At minimum such IDs will be attached to BTC clinical trial data; and ideally to BTC pre-clinical, basic research, and external data as appropriate (all by way of the scheme [described here](index.md#external-data)). Note that here “biospecimen” is preferred over “sample” for generality and to capture that samples can be subdivided into multiple portions. The association between data file and biospecimen is maintained as
 metadata within the DASH database, not within the file identifier itself.  A hypothetical data tree for the first
 subject (patient) of the BTC glioblastoma multiforme trial might look like
 ![gbm-id-example](img/gbm-id-example.png)
 Here 6 needle biopsy cores (samples) were extracted; the first of which has been characterized in multiple assays, yielding 8 distinctly molecular data output files (i.e. one per data type). Each interventional timepoint in a longitudinal trial would yield a new sample (or samples) for that subject.
+
+### Scope
+It will help to amplify a [point made above in the context of data curation](index.md#data-curation), namely that
+**BTC- identifiers apply only to data AFTER sharing into DASH**.  These IDs do not replace identifiers attached
+to data at their point of origin (e.g. in a clinical trial data system, or PI lab research project, or external
+publication), and in fact those original IDs will be carried along--to the greatest extent possible--as metadata
+when data are shared into DASH.  In other words, DASH does not seek to legislate how data generators identify data within the context of its original use case(s), only how data are identified once they are shared within DASH.
 
 ## Data Entities and Levels
 ---
@@ -182,5 +193,5 @@ In the latter case of external data being assigned BTC IDs, a unique project abb
 
 but should not be interpreted as a claim that BTC now “owns” or is attempting to “re-brand” those external data.
 
-## Version 0.7.0
+## Version 0.7.1
 

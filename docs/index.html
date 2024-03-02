@@ -136,7 +136,7 @@
               </ul>
             </li>
             
-            <li class="nav-item" data-level="2"><a href="#version-070" class="nav-link">Version 0.7.0</a>
+            <li class="nav-item" data-level="2"><a href="#version-071" class="nav-link">Version 0.7.1</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -165,11 +165,12 @@ NIH guidelines</a>
 <h2 id="data-life-cycle">Data Life Cycle</h2>
 <hr />
 <p><img alt="data-life-cycle" src="img/data-life-cycle.png" />
-This will be described in more detail below, but first note that within BTC the flow of data naturally subdivides along the boundaries of institutional and BTC-wide ecosystems:</p>
+Within BTC the flow of data naturally subdivides along the boundaries of institutional and BTC-wide ecosystems:</p>
 <ul>
-<li><strong>Institutional:</strong>  data, research, and clinical trial activity typically within the walls of a single instution, performed upon and annotated by institutional systems per their internal practice</li>
+<li><strong>Institutional:</strong>  data, research, and clinical trial activity typically within the walls of a single instution, performed upon and annotated by institutional systems per their internal practice.  Some examples of this could be pre-clinical or basic research results from a single PI lab, or the exported and de-indentified data from a clinical trial data system.</li>
 <li><strong>DASH:</strong>  data shared by TeamLabs across institutional boundaries, by way of <strong>DASH</strong></li>
 </ul>
+<p>How DASH maintains identifiers for and provenance of these data is <a href="./#btc-identifier-scheme">described in more detail below</a>.</p>
 <h2 id="planning-for-data-sharing">Planning for Data Sharing</h2>
 <hr />
 <p>Please contact the BTC Programs Team when planning to share data used by or generated in your TeamLab, whether pre-clinical, clinical, or publication data.  The PM team will help assess whether there are contractual, institutional, or other
@@ -192,12 +193,14 @@ abstraction: a semi-organized collection of storage bins, stratified by TeamLab,
 immediately, prior to further curation, as needs dictate.</p>
 <h2 id="data-curation">Data Curation</h2>
 <hr />
-<p>After staging, many (but not necessarily all) BTC datasets will also be curated, which includes steps such as: validating that
-submitted files do not include PHI, verifying that trial-specific IDs (when applicable) have been associated so that
-the data may be tracked, and ensuring sufficient metadata have been submitted so that others may productively use the data.
-BTC-specific IDs will also be assigned within the DASH database to maintain provenance and promote data governance (such as
-sandboxed use during embargo periods). These IDs supplement, rather than replace, institutional or trial-specific IDs,
-and the mapping between the two will be retained internally by DASH.</p>
+<p>After staging, many (but not necessarily all) BTC datasets will also be curated, which includes steps such as: validating that shared files do not include PHI, verifying that trial-specific IDs (when applicable) have been associated
+so that the data may be tracked, and ensuring sufficient metadata have been submitted so that others may productively
+use the data.  As <a href="./#btc-identifier-scheme">described below</a>, BTC-specific IDs will also be assigned
+within the DASH database to maintain provenance, enable pan-cancer analysis, and promote data governance
+(such as sandboxed
+use during embargo periods). These BTC IDs supplement, rather than replace, any IDs attached at the point of
+data origination (e.g. in a clinical trial or PI lab) and the mapping between the two will be retained
+internally by DASH as metadata.</p>
 <h2 id="accessing-data">Accessing Data</h2>
 <hr />
 <p>Both staged and curated data are summarized in our
@@ -236,13 +239,19 @@ easy-to-use interface that is also approachable for non-computationalists.  The 
 version broadly available to BTC in Q2 of 2024.  Please contact the <a href="mailto:dash@breakthroughcancer.org">DASH team</a> if you would like to contribute pipelines, perform analyses, or would simply like more information.</p>
 <h2 id="btc-identifier-scheme">BTC Identifier Scheme</h2>
 <hr />
-<p>As data are added to DASH they will be tagged with subject and sample (biospecimen) identifiers as follows:
+<p>As data are added to DASH they are tagged with subject and sample (biospecimen) identifiers as follows:
 <img alt="btc-id-scheme" src="img/btc-id-scheme.png" />
-At minimum such IDs will be attached to BTC trial data; ideally to BTC pre-clinicial data as well, and potentially to external data as appropriate. Note that here “biospecimen” is preferred over “sample” for generality and to capture that samples can be subdivided into multiple portions. The association between data file and biospecimen is maintained as
+At minimum such IDs will be attached to BTC clinical trial data; and ideally to BTC pre-clinical, basic research, and external data as appropriate (all by way of the scheme <a href="./#external-data">described here</a>). Note that here “biospecimen” is preferred over “sample” for generality and to capture that samples can be subdivided into multiple portions. The association between data file and biospecimen is maintained as
 metadata within the DASH database, not within the file identifier itself.  A hypothetical data tree for the first
 subject (patient) of the BTC glioblastoma multiforme trial might look like
 <img alt="gbm-id-example" src="img/gbm-id-example.png" />
 Here 6 needle biopsy cores (samples) were extracted; the first of which has been characterized in multiple assays, yielding 8 distinctly molecular data output files (i.e. one per data type). Each interventional timepoint in a longitudinal trial would yield a new sample (or samples) for that subject.</p>
+<h3 id="scope">Scope</h3>
+<p>It will help to amplify a <a href="./#data-curation">point made above in the context of data curation</a>, namely that
+<strong>BTC- identifiers apply only to data AFTER sharing into DASH</strong>.  These IDs do not replace identifiers attached
+to data at their point of origin (e.g. in a clinical trial data system, or PI lab research project, or external
+publication), and in fact those original IDs will be carried along--to the greatest extent possible--as metadata
+when data are shared into DASH.  In other words, DASH does not seek to legislate how data generators identify data within the context of its original use case(s), only how data are identified once they are shared within DASH.</p>
 <h2 id="data-entities-and-levels">Data Entities and Levels</h2>
 <hr />
 <p>As data progress through the BTC life cycle they are processed and transformed through a series of “data levels.” For each data context (e.g. clinical, imaging, sequencing, spatial) the constituent files of each data level may differ, but in all cases Level 1 represents raw or uncurated data (e.g. directly from an instrument) and each successive level represents a maturation of that data towards analysis and, eventually, publication and wider utilization.</p>
@@ -309,7 +318,7 @@ including single-cell and single-nucleus RNA Seq (sc/snRNASeq), single-cell ATAC
 <li>And simplifying later bookkeeping and database tracing when assembling data for publication</li>
 </ul>
 <p>but should not be interpreted as a claim that BTC now “owns” or is attempting to “re-brand” those external data.</p>
-<h2 id="version-070">Version 0.7.0</h2></div>
+<h2 id="version-071">Version 0.7.1</h2></div>
             </div>
         </div>
 
@@ -392,8 +401,8 @@ including single-cell and single-nucleus RNA Seq (sc/snRNASeq), single-cell ATAC
 
 <!--
 MkDocs version : 1.5.2
-Build Date UTC : 2024-02-25 14:01:58.883165+00:00
+Build Date UTC : 2024-03-02 21:22:57.321905+00:00
 -->
 <center  style="font-size:.85em; color: #bababa; margin-top: -1.5em">
-2024_02_25_09:01:58
+2024_03_02_16:22:57
 </center>
