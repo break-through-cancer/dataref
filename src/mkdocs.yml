@@ -3,6 +3,7 @@ nav:
     - '  ':  index.md
     - FAQ:   faq.md
     - '  ':  about.md
+    - '  ':  relnotes.md
 
 docs_dir: content
 site_dir: dataref

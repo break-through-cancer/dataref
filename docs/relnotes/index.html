@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>FAQ - Break Through Cancer Data Reference</title>
+        <title>   - Break Through Cancer Data Reference</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -34,14 +34,14 @@
                             <li class="navitem">
                                 <a href=".." class="nav-link">  </a>
                             </li>
-                            <li class="navitem active">
-                                <a href="./" class="nav-link">FAQ</a>
+                            <li class="navitem">
+                                <a href="../faq/" class="nav-link">FAQ</a>
                             </li>
                             <li class="navitem">
                                 <a href="../about/" class="nav-link">  </a>
                             </li>
-                            <li class="navitem">
-                                <a href="../relnotes/" class="nav-link">  </a>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">  </a>
                             </li>
                         </ul>
 
@@ -52,12 +52,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href=".." class="nav-link">
+                                <a rel="prev" href="../about/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../about/" class="nav-link">
+                                <a rel="next" class="nav-link disabled">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -79,7 +79,12 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="2"><a href="#btc-data-science-frequently-asked-questions" class="nav-link">BTC Data Science Frequently Asked Questions</a>
+            <li class="nav-item" data-level="2"><a href="#dash-release-notes" class="nav-link">DASH Release Notes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#2024_03_04" class="nav-link">2024_03_04</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -89,67 +94,56 @@
                     <div class="col-md-9" role="main">
 
 <style>
-   .navbar, .bs-sidebar { display: none; }
+   .navbar { display: none; }
+   .bs-sidebar
 </style>
 
-<h2 id="btc-data-science-frequently-asked-questions">BTC Data Science Frequently Asked Questions</h2>
+<h2 id="dash-release-notes">DASH Release Notes</h2>
 <hr>
 
-<ol>
-<li>
-<p><strong>How should my TeamLab plan to share data in DASH?</strong></p>
-<p>See the <a href="../#planning-for-data-sharing">planning section of the data reference</a>.</p>
-</li>
-<li>
-<p><strong>How do I share/submit data in DASH?</strong></p>
-<p>See the <a href="../#submitting-data">data submission section of the data reference</a>.</p>
-</li>
-<li>
-<p><strong>How can I see what data is in DASH or retrieve it for my work?</strong></p>
-<p>For interactive exploration, visit the <a href="https://board.breakthroughcancer.org">DASH Board</a>
-and <a href="https://data.breakthroughcancer.org">Browse</a> tools.  For large-scale downloads or
-pipelined analysis, use the <a href="../#accessing-data">programmatic methods as described here</a>.</p>
-</li>
-<li>
-<p><strong>What pipelines will be available for analysis?</strong></p>
-<p>This is discussed in <a href="../#analysis-and-pipelines">the data reference</a>.</p>
-</li>
-<li>
-<p><strong>What assays (data types) will the pipelines operate upon?</strong></p>
-<p>This is also discussed in <a href="../#analysis-and-pipelines">the data reference</a>.</p>
-</li>
-<li>
-<p><strong>Who is responsible for data analysis within BTC disease team labs?</strong></p>
-<p>There is fuzzy overlap in responsibility for analysis:  it should be driven to the greatest extent possible by the
-disease teamlab, as reflected in their respective budgets, and supported by the Data Science TeamLab (DST)
-in whatever means necessary (whether computational analytics, data engineering, visualization, etc), but not
-wholly outsourced from the disease teamlab to the DST.</p>
-<p>Where that line is drawn for each scientific question or project will likely shift—and may also depend upon
-trial timelines and staffing—-probably in some cases the data scientists may need to pick up more of the
-analysis, in others less so.  But the overall view, at least initially while BTC finds its operational
-footing vis-à-vis data science, is that the DST is not “just another core, service-oriented facility,” but
-is a resource of expert collaborators who devise new methods (when needed), or assist with data
-gathering/engineering, or provide analytic insight and/or assist with interpretation.</p>
-</li>
-<li>
-<p><strong>What kind of biospecimen metadata will be collected?</strong></p>
-<p>This will likely be different for each trial, but ideally we aim to collect as much as possible, including:</p>
+<h2 id="2024_03_04"><strong>2024_03_04</strong></h2>
+<p>Welcome to the inaugural edition of the DASH Release Notes, a 
+<a href="https://en.wikipedia.org/wiki/Release_notes">simple mechanism</a> to provide BTC-wide updates 
+from the Data Science Hub as new datasets, analysis methods &amp; pipelines, software infrastructure,
+and more emerge across BTC. With this first installment we're happy to relay:</p>
 <ul>
-<li>Sample acquisition method, e.g. autopsy, biopsy, fine needle aspirate, etc</li>
-<li>Topography Code, indicating site within the body, e.g. based on ICD-O-3</li>
-<li>Collection information e.g. time, duration of ischemia, temperature, etc</li>
-<li>Processing of parent biospecimen information e.g. fresh, frozen, etc</li>
-<li>Biospecimen and derivative clinical metadata I.e. Histologic Morphology Code, e.g. based on ICD-O-3</li>
-<li>Coordinates for derivative biospecimen from their parent biospecimen</li>
-<li>Processing of derivative biospecimen for downstream analysis e.g. dissociation, sectioning, analyte isolation 
-<br>
-<br>
- This is adapted from <a href="https://humantumoratlas.org/standard/biospecimen">HTAN standards</a> and is not intended
- to be mandatory constraints imposed by the DST upon clinical trial teams or disease team labs; we are in the
- process of defining the minimum viable set of clinical data elements (CDEs) for BTC projects.</li>
+<li>A meeting of the Data Science TeamLab (DST) last week at MD Anderson, with thanks to Kadir Akdemir &amp; MDA colleagues for hosting.  This 2-day event showcased considerable progress in the development of analysis methods &amp; pipelines (notably single-cell and bulkRNA, TCR, spatial, and classical bulkDNA approaches); and how they're being woven into an increasingly capable data analysis system for the entire BTC portfolio.  Leading to energetic discussion of future science, cross-team interaction, and trainee development.</li>
+<li>
+<p>Data snapshot version <strong>2024-02-20</strong>, with over 1K samples and 9TB of data across several TeamLabs:</p>
+<ul>
+<li>OV-IOC:<ul>
+<li>335 STIC histoPath images from the Shih Lab @ JHU (courtesy of Yen-Wei Chien)</li>
+<li>Over 200 files of methylation data from the Cope Lab at JHU</li>
 </ul>
 </li>
-</ol></div>
+<li>Pancreatic: over 450 files including<ul>
+<li>Flow, RNASeq, and path images of MRTX1133-treated mice &amp; cell lines from Dougan Lab @ DFCI (courtesy of Li Qiang)</li>
+<li>Visium spatialTranscriptomics mouse data from Kalluri Lab @ MDA (courtesy of Kate McAndrews)</li>
+<li>Cell surface proteomics from Oni Lab @ MIT (courtesy of Salome Shubitidze)</li>
+</ul>
+</li>
+<li>
+<p>More than 4,400 files of GBM data comprising 101 samples and 8 assay data types</p>
+<p><em>Contact the <a href="mailto:dash@breakthroughcancer.org">DASH team</a> if you still do not have an account for accessing or analyzing data, but please keep in mind that until embargo periods have passed the data created by a TeamLab will generally be accessible only to members of that TeamLab.</em></p>
+</li>
+<li>
+<p>Data shared to DASH is summarized for easy perusal in the
+<a href="https://board.breakthroughcancer.org">Board app</a> ...
+<img alt="DASH-Board" src="../img/dash-board.png" />
+... may be browsed/downloaded from the <a href="https://board.breakthroughcancer.org">Browse app</a> or 
+programmatically (e.g. see
+<a href="https://cloud.google.com/sdk/gcloud/reference/storage">here</a> or
+<a href="https://cloud.google.com/storage/docs/gsutil">here</a>)
+<img alt="DASH-Board" src="../img/dash-browse.png" />
+... analyzed with any of the 20+ pipeline configurations available in <a href="https://cirro.bio">Cirro</a>
+<img alt="Cirro" src="../img/cirro-aims.png" />
+... with all easily accessed from the DASH home page at
+<a href="https://dash.breakthroughcancer.org">dash.breakthroughcancer.org</a>
+<img alt="DASH-HomePage" src="../img/dash-home.png" /></p>
+</li>
+</ul>
+</li>
+</ul></div>
             </div>
         </div>
 
@@ -229,6 +223,3 @@ gathering/engineering, or provide analytic insight and/or assist with interpreta
 
     </body>
 </html>
-<center  style="font-size:.85em; color: #bababa; margin-top: -1.5em">
-2024_03_03_08:49:35
-</center>
