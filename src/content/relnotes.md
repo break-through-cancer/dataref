@@ -9,10 +9,7 @@
 
 ## **2024_03_04**
 
-Welcome to the inaugural edition of the DASH Release Notes, a 
-[simple mechanism](https://en.wikipedia.org/wiki/Release_notes) to provide BTC-wide updates 
-from the Data Science Hub as new datasets, analysis methods & pipelines, software infrastructure,
-and more emerge across BTC. With this first installment we're happy to relay:
+Welcome to the inaugural edition of the DASH Release Notes, through which we'll provide regular, BTC-wide updates as new datasets, analysis methods & pipelines, infrastructure, and more emerge.  With this first installment we're happy to relay:
 
 - A meeting of the Data Science TeamLab (DST) last week at MD Anderson, with thanks to Kadir Akdemir & MDA colleagues for hosting.  This 2-day event showcased considerable progress in the development of analysis methods & pipelines (notably single-cell and bulkRNA, TCR, spatial, and classical bulkDNA approaches); and how they're being woven into an increasingly capable data analysis system for the entire BTC portfolio.  Leading to energetic discussion of future science, cross-team interaction, and trainee development.
 - Data snapshot version **2024-02-20**, with over 1K samples and 9TB of data across several TeamLabs:
@@ -30,7 +27,7 @@ and more emerge across BTC. With this first installment we're happy to relay:
     - Data shared to DASH is summarized for easy perusal in the
 	[Board app](https://board.breakthroughcancer.org) ...
 ![DASH-Board](img/dash-board.png)
-    ... may be browsed/downloaded from the [Browse app](https://board.breakthroughcancer.org) or 
+    ... may be browsed/downloaded from the [Browse app](https://data.breakthroughcancer.org) or
 	programmatically (e.g. see
 	<a href="https://cloud.google.com/sdk/gcloud/reference/storage">here</a> or
 	<a href="https://cloud.google.com/storage/docs/gsutil">here</a>)
