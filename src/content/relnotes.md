@@ -7,6 +7,33 @@
 ## DASH Release Notes
 <hr>
 
+## **2024_06_03**
+
+In this quarter's installment of the DASH release notes we are happy to again report tremendous progress.
+
+- An **incredibly successful Hackathon event,** with some 50 registrants across 5 TeamLabs coming together
+May 20-21 at MSKCC for: 6 training workshops on emerging scRNA, spatial, TCR, and bulkDNA+RNA pipelines
+in Cirro, coupled with hands-on data analysis and real-time tool construction to explore scientific hypotheses.
+Each of the 5 teams performed valuable pipeline, analysis, and exploratory data work; with the winning team
+taking home the $150 prize for developing a novel approach to using the pool of doublet cells in GBM single-cell
+RNA data (about 10% of cell population) as markers for strong cell-cell interaction, confirming one such 
+MDK:PTPRZ1 interaction in matched GBM spatial data, then using L-R gene
+vector analysis to identify a marked gradient effect in a separate, public GBM dataset.
+- The **scRNA, spatial, and TCR development teams have released multiple versions of their pipelines,** applied 
+in conjunction with disease TeamLabs to emerging data.
+- By way of 6 internal data releases, the **total quantity of data shared to DASH has more than
+doubled since March** and number of files nearly tripled; the current **2024-05-21** data version
+includes over 20TB across some 1200 samples:
+![DASH-counts-2024-06](img/dash-counts-2024-06-03.png)
+- Thanks to Henry Dewhurst and the Cirro team (especially Nathan Thorpe), **we now have an operational, BTC-specific
+Cirro tenant.** This provides additional security sandboxing and configuration flexibility, was used in the 
+aforementioned hackathon, and is the **final major step towards production-grade analyses workspacess for each
+disease TeamLab** to be rolled out in Q2 through Q4 of 2024.
+- **Multiple software releases of the DASH Board, Browse and Curate APPs**
+    - Reflecting new metadata export, annotations, and filtering capabilities
+	- Improved UI, phone home, and metadata collection, towards self-service by data coordinators
+
+
 ## **2024_03_04**
 
 Welcome to the inaugural edition of the DASH Release Notes, through which we'll provide regular, BTC-wide updates as new datasets, analysis methods & pipelines, infrastructure, and more emerge.  With this first installment we're happy to relay:
