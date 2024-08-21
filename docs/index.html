@@ -94,7 +94,7 @@
               </ul>
             </li>
             
-            <li class="nav-item" data-level="2"><a href="#submitting-data" class="nav-link">Submitting Data</a>
+            <li class="nav-item" data-level="2"><a href="#sharingsubmitting-data" class="nav-link">Sharing/Submitting Data</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -139,7 +139,7 @@
               </ul>
             </li>
             
-            <li class="nav-item" data-level="2"><a href="#version-072" class="nav-link">Version 0.7.2</a>
+            <li class="nav-item" data-level="2"><a href="#version-073" class="nav-link">Version 0.7.3</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -184,11 +184,21 @@ with access limited to members of the submitting TeamLab until the embargo perio
 <li>Patient IDs, sample IDs, and related metadata are defined within clinical lab manuals and SOPs: this will help BTC maintain the provenance of material and data as it travels from one institute to another</li>
 <li>SOPs are in place to remove PHI prior to sharing</li>
 </ul>
-<h2 id="submitting-data">Submitting Data</h2>
+<h2 id="sharingsubmitting-data">Sharing/Submitting Data</h2>
 <hr />
-<p>When data have been generated and are ready to be shared, please contact the
-<a href="mailto:dash@breakthroughcancer.org">the DASH team</a>.  We'll be happy to guide data providers through the
-<a target="#" href="https://breakthroughcancer.sharepoint.com/:b:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/DASH-DataSubmission-Technical-Instructions.pdf?csf=1&web=1&e=dzPNjr">technical instructions for sharing</a>
+<p>When data are ready to be shared/analyzed via DASH, please contact the data coordinator(s) at your institution:</p>
+<ul>
+<li>MD Anderson: <a href="mailto:krshaw@mdanderson.org">Kenna Shaw</a> (PI: Caroline Chung),
+<a href="mailto:TGBurnsteel@mdanderson.org">Tracee Burnsteel</a> <BR></li>
+<li>MIT: <a href="mailto:cdemu@mit.edu">Charles Demurjian</a> (PI: Stuart Levine) <BR></li>
+<li>Johns Hopkins: <a href="mailto:mwetzel7@jhu.edu">Meredith Wetzel</a> (PI: Elana Fertig) <BR></li>
+<li>Memorial Sloan Kettering: <a href="mailto:havasove@mskcc.org">Eli Havasov</a> (PI: Sohrab Shah) <BR></li>
+<li>Dana Farber:  (interim) <a href="mailto:jgantchev@bwh.harvard.edu">Jenn Gantchev</a>, <a href="mailto:msregan@bwh.harvard.edu">Michael Regan</a>; Siri Palreddy (mid-Sept 2024, email TBD)</li>
+</ul>
+<p>The
+<a target="#" href="https://breakthroughcancer.sharepoint.com/:b:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/DataCoordinators/2024-01-22-DataCoord-Kickoff.pdf?csf=1&web=1&e=oak4Ha">role of the BTC data coordinator is described here</a>.
+Your data coordinator and <a href="mailto:dash@breakthroughcancer.org">the DASH team</a> will be happy to
+<a target="#" href="https://breakthroughcancer.sharepoint.com/:b:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/DASH-DataSubmission-Technical-Instructions.pdf?csf=1&web=1&e=dzPNjr">guide data providers through the process</a>
 and help decide which staging method to use (SharePoint or cloud buckets).  The
 <strong><em>staging area</em></strong> is a <a target=_blank href="https://en.wikipedia.org/wiki/Data_lake">data lake</a>-style
 abstraction: a semi-organized collection of storage bins, stratified by TeamLab, whose contents are provided
@@ -233,13 +243,18 @@ tools for each <a href="#omic-data-levels">data level</a>: from Levels 1 and 2 p
 subsequent L3 and L4 analyses.  This work is very active, and a number of analysis pipelines are already available
 from <a href="https://broadinstitute.github.io/warp/docs/get-started/">DFCI</a>, JHU, MDAnderson, <a href="https://nf-co.re">NextFlow nf-core</a>
 and the <a href="https://openwetware.org/wiki/BioMicroCenter">MIT BioMicroCenter</a>.</p>
-<p>As these and other pipelines harden into robust, self-service tools they are also being added to a common analysis workflow
-under construction in <a href="https://cirro.bio/">Cirro</a>.
+<p>As these and other pipelines harden towards robust, self-service tools they are also being added to a common, increasingly
+multi-modal analysis workflow in <a href="https://breakthroughcancer.cirro.bio/">the BTC Cirro instance</a>.
 <img alt="cirro-pipeline-analysis-platform" src="img/cirro-aims.png" />
-The Cirro platform runs NextFlow and WDL pipelines, and provides powerful tools for computationalists in a modern,
-easy-to-use interface that is also approachable for non-computationalists.  The DST has already installed approximately
-20 pipeline configurations into Cirro, and is conducting targeted data analysis with the expectation to make an MVP
-version broadly available to BTC in Q2 of 2024.  Please contact the <a href="mailto:dash@breakthroughcancer.org">DASH team</a> if you would like to contribute pipelines, perform analyses, or would simply like more information.</p>
+This <a href="https://breakthroughcancer.cirro.bio/">BTC Cirro instance</a> should be immediately accessible
+to anyone in BTC via <a href="https://en.wikipedia.org/wiki/Single_sign-on">single-sign-on</a>
+with the same credentials used to access other BTC resources (e.g. SharePoint or Teams).  The Cirro platform runs NextFlow
+and WDL pipelines, and provides powerful tools for computationalists in a modern, easy-to-use interface that is also
+approachable for non-computationalists.  There are over 170 pipeline configurations already available, and we are 
+making project spaces available for each TeamLab that are pre-loaded with that team's data, include all available analysis 
+pipelines, and are by default sandboxed for access only by members of the team.  Please contact the 
+<a href="mailto:dash@breakthroughcancer.org">DASH team</a> if you would like to contribute pipelines,
+perform analyses, or would simply like more information.</p>
 <h2 id="btc-identifier-scheme">BTC Identifier Scheme</h2>
 <hr />
 <p>As data are added to DASH they are tagged with subject and sample (biospecimen) identifiers as follows:
@@ -324,7 +339,7 @@ including single-cell and single-nucleus RNA Seq (sc/snRNASeq), single-cell ATAC
 <li>And simplifying later bookkeeping and database tracing when assembling data for publication</li>
 </ul>
 <p>but should not be interpreted as a claim that BTC now “owns” or is attempting to “re-brand” those external data.</p>
-<h2 id="version-072">Version 0.7.2</h2></div>
+<h2 id="version-073">Version 0.7.3</h2></div>
             </div>
         </div>
 
@@ -407,8 +422,8 @@ including single-cell and single-nucleus RNA Seq (sc/snRNASeq), single-cell ATAC
 
 <!--
 MkDocs version : 1.5.2
-Build Date UTC : 2024-06-03 18:47:52.914765+00:00
+Build Date UTC : 2024-08-21 21:37:04.452089+00:00
 -->
 <center  style="font-size:.85em; color: #bababa; margin-top: -1.5em">
-2024_06_03_14:47:52
+2024_08_21_17:37:04
 </center>

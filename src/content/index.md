@@ -38,11 +38,21 @@ with access limited to members of the submitting TeamLab until the embargo perio
 * Patient IDs, sample IDs, and related metadata are defined within clinical lab manuals and SOPs: this will help BTC maintain the provenance of material and data as it travels from one institute to another
 * SOPs are in place to remove PHI prior to sharing
 
-## Submitting Data
+## Sharing/Submitting Data
 ---
-When data have been generated and are ready to be shared, please contact the
-[the DASH team](mailto:dash@breakthroughcancer.org).  We'll be happy to guide data providers through the
-<a target="#" href="https://breakthroughcancer.sharepoint.com/:b:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/DASH-DataSubmission-Technical-Instructions.pdf?csf=1&web=1&e=dzPNjr">technical instructions for sharing</a>
+When data are ready to be shared/analyzed via DASH, please contact the data coordinator(s) at your institution:
+
+- MD Anderson: [Kenna Shaw](mailto:krshaw@mdanderson.org) (PI: Caroline Chung),
+[Tracee Burnsteel](mailto:TGBurnsteel@mdanderson.org) <BR>
+- MIT: [Charles Demurjian](mailto:cdemu@mit.edu) (PI: Stuart Levine) <BR>
+- Johns Hopkins: [Meredith Wetzel](mailto:mwetzel7@jhu.edu) (PI: Elana Fertig) <BR>
+- Memorial Sloan Kettering: [Eli Havasov](mailto:havasove@mskcc.org) (PI: Sohrab Shah) <BR>
+- Dana Farber:  (interim) [Jenn Gantchev](mailto:jgantchev@bwh.harvard.edu), [Michael Regan](mailto:msregan@bwh.harvard.edu); Siri Palreddy (mid-Sept 2024, email TBD)
+
+The
+<a target="#" href="https://breakthroughcancer.sharepoint.com/:b:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/DataCoordinators/2024-01-22-DataCoord-Kickoff.pdf?csf=1&web=1&e=oak4Ha">role of the BTC data coordinator is described here</a>.
+Your data coordinator and [the DASH team](mailto:dash@breakthroughcancer.org) will be happy to
+<a target="#" href="https://breakthroughcancer.sharepoint.com/:b:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/DASH-DataSubmission-Technical-Instructions.pdf?csf=1&web=1&e=dzPNjr">guide data providers through the process</a>
 and help decide which staging method to use (SharePoint or cloud buckets).  The
 ***staging area*** is a <a target=_blank href="https://en.wikipedia.org/wiki/Data_lake">data lake</a>-style
 abstraction: a semi-organized collection of storage bins, stratified by TeamLab, whose contents are provided
@@ -94,13 +104,18 @@ subsequent L3 and L4 analyses.  This work is very active, and a number of analys
 from [DFCI](https://broadinstitute.github.io/warp/docs/get-started/), JHU, MDAnderson, [NextFlow nf-core](https://nf-co.re)
 and the [MIT BioMicroCenter](https://openwetware.org/wiki/BioMicroCenter).
 
-As these and other pipelines harden into robust, self-service tools they are also being added to a common analysis workflow
-under construction in [Cirro](https://cirro.bio/).
+As these and other pipelines harden towards robust, self-service tools they are also being added to a common, increasingly
+multi-modal analysis workflow in [the BTC Cirro instance](https://breakthroughcancer.cirro.bio/).
 ![cirro-pipeline-analysis-platform](img/cirro-aims.png)
-The Cirro platform runs NextFlow and WDL pipelines, and provides powerful tools for computationalists in a modern,
-easy-to-use interface that is also approachable for non-computationalists.  The DST has already installed approximately
-20 pipeline configurations into Cirro, and is conducting targeted data analysis with the expectation to make an MVP
-version broadly available to BTC in Q2 of 2024.  Please contact the [DASH team](mailto:dash@breakthroughcancer.org) if you would like to contribute pipelines, perform analyses, or would simply like more information.
+This [BTC Cirro instance](https://breakthroughcancer.cirro.bio/) should be immediately accessible
+to anyone in BTC via [single-sign-on](https://en.wikipedia.org/wiki/Single_sign-on)
+with the same credentials used to access other BTC resources (e.g. SharePoint or Teams).  The Cirro platform runs NextFlow
+and WDL pipelines, and provides powerful tools for computationalists in a modern, easy-to-use interface that is also
+approachable for non-computationalists.  There are over 170 pipeline configurations already available, and we are
+making project spaces available for each TeamLab that are pre-loaded with that team's data, include all available analysis
+pipelines, and are by default sandboxed for access only by members of the team.  Please contact the
+[DASH team](mailto:dash@breakthroughcancer.org) if you would like to contribute pipelines,
+perform analyses, or would simply like more information.
 
 ## BTC Identifier Scheme
 ---
@@ -196,5 +211,5 @@ In the latter case of external data being assigned BTC IDs, a unique study name 
 
 but should not be interpreted as a claim that BTC now “owns” or is attempting to “re-brand” those external data.
 
-## Version 0.7.2
+## Version 0.7.3
 
