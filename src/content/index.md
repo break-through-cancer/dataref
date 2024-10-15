@@ -77,13 +77,12 @@ Both staged and curated data are summarized in our
 <a target="_blank" href="https://board.breakthroughcancer.org">high-level DASHBoard</a>
 ![dash-board](img/dash-board.png)
 and may be downloaded interactively from the
-<a target="_blank" href="https://data.breakthroughcancer.org">data browser</a> 
+<a target="_blank" href="https://data.breakthroughcancer.org">data browser</a> <span style="color: grey;">*(temporarily disabled during AWS migration)*</span>
 ![dash-browse](img/dash-browse.png)
 or programmatically via
-<a href="https://cloud.google.com/sdk/gcloud/reference/storage">gcloud</a> or
-<a href="https://cloud.google.com/storage/docs/gsutil">gsutil</a> for many, large files or pipelined analysis.
+<a href="https://aws.amazon.com/cli/">aws cli</a> for many, large files or pipelined analysis.
 Additional information is available in the
-<a target="#" href="https://breakthroughcancer.sharepoint.com/:b:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/DASH-DataSubmission-Technical-Instructions.pdf?csf=1&web=1&e=dzPNjr">technical instructions for data sharing</a>. Finally, recall that staged data are offered "as is," while curated data will soon support more advanced use cases such as querying with 
+<a target="#" href="https://breakthroughcancer.sharepoint.com/:b:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/DASH-DataSubmission-Technical-Instructions-AWS-v0.7.pdf?csf=1&web=1&e=0YIMKj">technical instructions for data sharing</a>. Finally, recall that staged data are offered "as is," while curated data will soon support more advanced use cases such as querying with 
 fine-grained parameters (e.g. gene name) or visual exploration in familiar tools like
 <a target=_blank href="https://www.cbioportal.org">cBioPortal</a>,
 <a target=_blank href="https://cellxgene.cziscience.com">cellxgene</a>, or
