@@ -3,10 +3,14 @@
    .navbar { display: none; }
 </style>
 
+## Quick Documents Links
+
+|  [BTC Data Science Hub Proposal](https://breakthroughcancer.sharepoint.com/:b:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/Governance/Data_Science_Hub_Proposal.pdf?csf=1&web=1&e=HZNVZ6)  |  [Data Coordinator Duties](https://breakthroughcancer.sharepoint.com/:b:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/DataCoordinators/2024-01-22-DataCoord-Kickoff.pdf?csf=1&web=1&e=ujUORh)  |  [Technical Instructions on Staging Data](https://breakthroughcancer.sharepoint.com/:w:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/DASH%20Data%20Submission%20Instructions/DASH-DataSubmission-Technical-Instructions-AWS-v0.7.docx?d=w862eb33d25ee4c51a4c962048fb66fd8&csf=1&web=1&e=dY6t6B)  |  [How to Configure AWS CLI](https://breakthroughcancer.sharepoint.com/:b:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/AWS-CLI-ConfigInstructions-TeamLabS3Access.pdf?csf=1&web=1&e=y4B2vc)  |
+
 ## BTC Data Reference
-The aim of this document is to serve as a central point of reference for data handling in Break Through Cancer (BTC), capturing the consensus rubric under which data are generated, annotated, aggregated, governed, and accessed.  This includes metadata capture during patient enrollment and sample acquisition, standards and processes for molecular assay data generation and pipelines, data flow diagrams providing simplified views, as well as a FAQ for common questions.  In concert with BTC Disease TeamLabs, these
+The aim of this page is to serve as a central point of reference for data handling in Break Through Cancer (BTC), capturing the consensus rubric under which data are generated, annotated, aggregated, governed, and accessed.  This includes metadata capture during patient enrollment and sample acquisition, standards and processes for molecular assay data generation and pipelines, data flow diagrams providing simplified views, as well as a FAQ for common questions.  In concert with BTC Disease TeamLabs, these
 norms are being codified by the Data Science TeamLab (DST) as a key element of the
-<a target=_blank href="https://breakthroughcancer-my.sharepoint.com/:b:/g/personal/msn_breakthroughcancer_org/EV7qf7tHVRpMoFaCgpI_owwBAzJ-BsvEBHjkVcEr74WSRw?e=lc2A8r">data science proposal</a>
+<a target=_blank href="https://breakthroughcancer.sharepoint.com/:b:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/Governance/Data_Science_Hub_Proposal.pdf?csf=1&web=1&e=HZNVZ6">data science proposal</a>
 
 The system and infrastructure which serves as the convergence point for data science activity within BTC is
 code-named **DASH**, short for **DA**ta **S**cience **H**ub; and is informed by numerous standards,
@@ -42,22 +46,23 @@ with access limited to members of the submitting TeamLab until the embargo perio
 ---
 When data are ready to be shared/analyzed via DASH, please contact the data coordinator(s) at your institution:
 
-- MD Anderson: [Kenna Shaw](mailto:krshaw@mdanderson.org) (PI: Caroline Chung),
-[Tracee Burnsteel](mailto:TGBurnsteel@mdanderson.org) <BR>
+- MD Anderson: [Tracee Burnsteel](mailto:TGBurnsteel@mdanderson.org) <BR>
 - MIT: [Charles Demurjian](mailto:cdemu@mit.edu) (PI: Stuart Levine) <BR>
 - Johns Hopkins: [Meredith Wetzel](mailto:mwetzel7@jhu.edu) (PI: Elana Fertig) <BR>
 - Memorial Sloan Kettering: [Eli Havasov](mailto:havasove@mskcc.org) (PI: Sohrab Shah) <BR>
-- Dana Farber:  (interim) [Jenn Gantchev](mailto:jgantchev@bwh.harvard.edu), [Michael Regan](mailto:msregan@bwh.harvard.edu); Siri Palreddy (mid-Sept 2024, email TBD)
+- Dana Farber:  [Siri Palreddy](mailto:siri_palreddy@dfci.harvard.edu) (PI: Rameen Beroukhim)
 
 The
-<a target="#" href="https://breakthroughcancer.sharepoint.com/:b:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/DataCoordinators/2024-01-22-DataCoord-Kickoff.pdf?csf=1&web=1&e=oak4Ha">role of the BTC data coordinator is described here</a>.
+<a target="#" href="https://breakthroughcancer.sharepoint.com/:b:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/DataCoordinators/2024-01-22-DataCoord-Kickoff.pdf?csf=1&web=1&e=ujUORh">role of the BTC data coordinator is described here</a>.
 Your data coordinator and [the DASH team](mailto:dash@breakthroughcancer.org) will be happy to
-<a target="#" href="https://breakthroughcancer.sharepoint.com/:b:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/DASH-DataSubmission-Technical-Instructions.pdf?csf=1&web=1&e=dzPNjr">guide data providers through the process</a>
-and help decide which staging method to use (SharePoint or cloud buckets).  The
+<a target="#" href="https://breakthroughcancer.sharepoint.com/:b:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/DASH%20Data%20Submission%20Instructions/DASH-DataSubmission-Technical-Instructions-AWS-v0.7.pdf?csf=1&web=1&e=yBONKu">guide data providers through the process</a>
+of staging data into cloud buckets(*).  The
 ***staging area*** is a <a target=_blank href="https://en.wikipedia.org/wiki/Data_lake">data lake</a>-style
 abstraction: a semi-organized collection of storage bins, stratified by TeamLab, whose contents are provided
 "as is," with little (or no) formal validation or annotation.  TeamLab members may elect to use such staged data
 immediately, prior to further curation, as needs dictate.
+
+\* Originally, we allowed teams to stage their data into cloud buckets *and* Sharepoint, however we now only allow data to be staged in the cloud.
 
 ## Data Curation
 ---
@@ -82,7 +87,7 @@ and may be downloaded interactively from the
 or programmatically via
 <a href="https://aws.amazon.com/cli/">aws cli</a> for many, large files or pipelined analysis.
 Additional information is available in the
-<a target="#" href="https://breakthroughcancer.sharepoint.com/:b:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/DASH-DataSubmission-Technical-Instructions-AWS-v0.7.pdf?csf=1&web=1&e=0YIMKj">technical instructions for data sharing</a>. Finally, recall that staged data are offered "as is," while curated data will soon support more advanced use cases such as querying with 
+<a target="#" href="https://breakthroughcancer.sharepoint.com/:b:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/DASH%20Data%20Submission%20Instructions/DASH-DataSubmission-Technical-Instructions-AWS-v0.7.pdf?csf=1&web=1&e=yBONKu">technical instructions (ver 0.7) for data sharing</a>. Finally, recall that staged data are offered "as is," while curated data will soon support more advanced use cases such as querying with 
 fine-grained parameters (e.g. gene name) or visual exploration in familiar tools like
 <a target=_blank href="https://www.cbioportal.org">cBioPortal</a>,
 <a target=_blank href="https://cellxgene.cziscience.com">cellxgene</a>, or
@@ -92,7 +97,7 @@ fine-grained parameters (e.g. gene name) or visual exploration in familiar tools
 ---
 
 The DST has established joint
-<a target=_blank href="https://breakthroughcancer.sharepoint.com/:x:/s/BreakThroughCancerStaff/Ef9cmbzRyaZIo82GR-siTPUBmjd2x9lE-nKo3MbCbpqH_g?e=sptYZs">Protocol and Analysis working groups</a> with disease teams, to: identify analysis needs across TeamLabs,
+<a target=_blank href=" ">Protocol and Analysis working groups</a> with disease teams, to: identify analysis needs across TeamLabs,
 align common SOPs for data generation and QC, coordinate changes as new technologies and needs arise, tie each central analytic
 pipeline to consumers of its data in each TeamLab, and perform regular check-ins to ensure analytic approaches continue to 
 suit disease TeamLab objectives.
@@ -184,7 +189,7 @@ In alignment with TCGA and the NCI Genomic Data Commons, BTC will categorize mul
 </table>
 
 These will apply to the 
-<a target=_blank href="https://breakthroughcancer.sharepoint.com/:x:/s/BreakThroughCancerStaff/Ef9cmbzRyaZIo82GR-siTPUBmjd2x9lE-nKo3MbCbpqH_g?e=sptYZs"> multiple assay and sequencing modalities (omic data types) envisioned for BTC</a>,
+<a target=_blank href=" "> multiple assay and sequencing modalities (omic data types) envisioned for BTC</a>,
 including single-cell and single-nucleus RNA Seq (sc/snRNASeq), single-cell ATAC Seq, bulk RNAseq and Bulk DNAseq.
 
 We propose that BTC follow the latest GENCODE version for gene annotations, GENCODE Version 43.  GENCODE is used for gene definitions by many consortia, including ENCODE, NCI Genomic Data Commons, Human Cell Atlas, and PCAWG (Pan-Cancer Analysis of Whole Genomes). Ensembl gene content is essentially identical to that of GENCODE (FAQ) and interconversion is possible.
@@ -210,5 +215,5 @@ In the latter case of external data being assigned BTC IDs, a unique study name 
 
 but should not be interpreted as a claim that BTC now “owns” or is attempting to “re-brand” those external data.
 
-## Version 0.7.3
+## Version 0.7.4
 

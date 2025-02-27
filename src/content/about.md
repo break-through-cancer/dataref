@@ -47,7 +47,7 @@ For more details, please see the
 
 As noted in 
 <a target=_blank href="https://breakthroughcancer.sharepoint.com/:p:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/Governance/2022-10-12_BTC_DataScienceHub_Kickoff-Excerpt.pptx?d=w01a7224e5a4b49959408b653b5b865c4&csf=1&web=1&e=W4oIIe">
-these slides excerpted from our kickoff</a>, the Data Science TeamLab sees itself as
+these slides excerpted from our kickoff (12-Oct-2022)</a>, the Data Science TeamLab sees itself as
 
 * Facilitators of disease TeamLab science
 * Innovators of high-resolution, multi-modal analytic methods
