@@ -97,7 +97,7 @@ fine-grained parameters (e.g. gene name) or visual exploration in familiar tools
 ---
 
 The DST has established joint
-<a target=_blank href=" ">Protocol and Analysis working groups</a> with disease teams, to: identify analysis needs across TeamLabs,
+<a target=_blank href="https://breakthroughcancer.sharepoint.com/:x:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/BTC-DataScience-Proposal-Appendix-Table-Analysis-Data-Types.xlsx?d=w838dd7ee42d64579ab1bfea0f18c821b&csf=1&web=1&e=xYeYvE">Protocol and Analysis working groups</a> with disease teams, to: identify analysis needs across TeamLabs,
 align common SOPs for data generation and QC, coordinate changes as new technologies and needs arise, tie each central analytic
 pipeline to consumers of its data in each TeamLab, and perform regular check-ins to ensure analytic approaches continue to 
 suit disease TeamLab objectives.
@@ -189,7 +189,7 @@ In alignment with TCGA and the NCI Genomic Data Commons, BTC will categorize mul
 </table>
 
 These will apply to the 
-<a target=_blank href=" "> multiple assay and sequencing modalities (omic data types) envisioned for BTC</a>,
+<a target=_blank href="https://breakthroughcancer.sharepoint.com/:x:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/BTC-DataScience-Proposal-Appendix-Table-Analysis-Data-Types.xlsx?d=w838dd7ee42d64579ab1bfea0f18c821b&csf=1&web=1&e=xYeYvE"> multiple assay and sequencing modalities (omic data types) envisioned for BTC</a>,
 including single-cell and single-nucleus RNA Seq (sc/snRNASeq), single-cell ATAC Seq, bulk RNAseq and Bulk DNAseq.
 
 We propose that BTC follow the latest GENCODE version for gene annotations, GENCODE Version 43.  GENCODE is used for gene definitions by many consortia, including ENCODE, NCI Genomic Data Commons, Human Cell Atlas, and PCAWG (Pan-Cancer Analysis of Whole Genomes). Ensembl gene content is essentially identical to that of GENCODE (FAQ) and interconversion is possible.
@@ -215,5 +215,5 @@ In the latter case of external data being assigned BTC IDs, a unique study name 
 
 but should not be interpreted as a claim that BTC now “owns” or is attempting to “re-brand” those external data.
 
-## Version 0.7.4
+## Version 0.7.5
 
