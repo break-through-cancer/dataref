@@ -7,6 +7,27 @@
 ## DASH Release Notes
 <hr>
 
+## **2025_03_26**
+Welcome to the first installment of DASH release notes in 2025! The Data Science
+Team (DST) closed 2024 with enormous progress and a strong sense of momentum across
+BTC, with DASH seeing a
+<a href="https://board.breakthroughcancer.org" rel="noopener noreferrer" target="_blank">28X increase in volume of data shared</a>
+by TeamLabs, nearly
+<a href="https://breakthroughcancer.cirro.bio" rel="noopener noreferrer" target="_blank">200 computational pipelines available in Cirro</a>,
+and deeply resourced multimodal analyses underway in numerous TeamLabs&ndash;fueled by novel BTC methods.  In just the first few months
+of 2025 the volume of data shared to DASH has grown 42% to over 40TB, reflecting contributions from 8 TeamLabs and notably 
+including hundreds of thousands of images from our newest TeamLab, LungRD.
+![DASH-counts-2025-03](img/dash-counts-2025-03-26.png) This is **catalyzing innovative scientific engagement** with disease TeamLabs, including collaborations with:
+
+- **The GBM team**, to advance the interpretation of single cell RNA sequencing (scRNA-seq), DNA sequencing, and both T-cell and malignant cell clonal tracking data to gain deeper insights into cancer evolution
+- **The Ovarian MRD team**, to adapt and optimize an approach for longitudinal tracking of drug resistance and co-leading spatial tumor microenvironment profiling to advance our understanding of MRD biology
+- **The KRAS team**, to advance understanding of cellular and molecular mechanisms of response and resistance to KRAS inhibitors by analyzing scRNA-seq data from clinical specimens and mouse models
+- And contributing to the **evaluation and use of spatial omics platforms** by analyzing and integrating spatial pilot data through the development and application of novel spatial methods.
+
+**Another important milestone in multimodal analytics is the GBM Explorer**. Developed by Alex Ling (Chiocca Lab, BWH), this APP brings together **5 data modalities** (scRNA, TCR, bulkRNA, images, and clinical annotations), enabling clinicians, computational biologists, and engineers to: i) overlay experimentally measured values on brain 
+![GBM-EXPLORER](../img/gbm-explorer.png)
+biopsy locations in 3D; for ii) rapid co-visualization of measured values from different assays; and iii) easy visualization of patient treatment histories.  Based upon innovative security infrastructure work by Henry Dewhurst at BTC Central, GBM Explorer is the **first multimodal analysis APP developed completely within BTC** for use by TeamLab members across all institutions, and we look forward to re-using this model to deploy BTC-wide portals for scRNA-seq, scTCR-seq, scBCR-seq and spatial 'omics as well as extend the use of [cBioPortal](https://www.cbioportal.org) in BTC.
+
 ## **2024_06_03**
 
 In this quarter's installment of the DASH release notes we are happy to again report tremendous progress.
