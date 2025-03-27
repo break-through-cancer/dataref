@@ -7,7 +7,7 @@
 ## DASH Release Notes
 <hr>
 
-## **2025_03_26**
+## **2025_03_27**
 Welcome to the first installment of DASH release notes in 2025! The Data Science
 Team (DST) closed 2024 with enormous progress and a strong sense of momentum across
 BTC, with DASH seeing a
