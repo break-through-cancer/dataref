@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,9 +10,13 @@
         <link rel="shortcut icon" href="img/favicon.ico">
         <title>Break Through Cancer Data Reference</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/brands.min.css" rel="stylesheet">
+        <link href="css/solid.min.css" rel="stylesheet">
+        <link href="css/v4-font-face.min.css" rel="stylesheet">
         <link href="css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
         <link href="extra.css" rel="stylesheet">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script>hljs.highlightAll();</script> 
@@ -23,7 +27,7 @@
             <div class="container">
                 <a class="navbar-brand" href=".">Break Through Cancer Data Reference</a>
                 <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -31,23 +35,23 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="navitem active">
-                                <a href="." class="nav-link">  </a>
+                            <li class="nav-item">
+                                <a href="." class="nav-link active" aria-current="page">  </a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="faq/" class="nav-link">FAQ</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="about/" class="nav-link">  </a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="relnotes/" class="nav-link">  </a>
                             </li>
                         </ul>
 
-                    <ul class="nav navbar-nav ml-auto">
+                    <ul class="nav navbar-nav ms-md-auto">
                         <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
@@ -68,83 +72,83 @@
 
         <div class="container">
             <div class="row">
-                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
     <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
             <span class="fa fa-angle-down"></span>
         </button>
     </div>
 
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="2"><a href="#quick-documents-links" class="nav-link">Quick Documents Links</a>
+            <li class="nav-item" data-bs-level="2"><a href="#quick-documents-links" class="nav-link">Quick Documents Links</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-level="2"><a href="#btc-data-reference" class="nav-link">BTC Data Reference</a>
+            <li class="nav-item" data-bs-level="2"><a href="#btc-data-reference" class="nav-link">BTC Data Reference</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-level="2"><a href="#data-life-cycle" class="nav-link">Data Life Cycle</a>
+            <li class="nav-item" data-bs-level="2"><a href="#data-life-cycle" class="nav-link">Data Life Cycle</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-level="2"><a href="#planning-for-data-sharing" class="nav-link">Planning for Data Sharing</a>
+            <li class="nav-item" data-bs-level="2"><a href="#planning-for-data-sharing" class="nav-link">Planning for Data Sharing</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-level="2"><a href="#sharingsubmitting-data" class="nav-link">Sharing/Submitting Data</a>
+            <li class="nav-item" data-bs-level="2"><a href="#sharingsubmitting-data" class="nav-link">Sharing/Submitting Data</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-level="2"><a href="#data-curation" class="nav-link">Data Curation</a>
+            <li class="nav-item" data-bs-level="2"><a href="#data-curation" class="nav-link">Data Curation</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-level="2"><a href="#accessing-data" class="nav-link">Accessing Data</a>
+            <li class="nav-item" data-bs-level="2"><a href="#accessing-data" class="nav-link">Accessing Data</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-level="2"><a href="#analysis-and-pipelines" class="nav-link">Analysis and Pipelines</a>
+            <li class="nav-item" data-bs-level="2"><a href="#analysis-and-pipelines" class="nav-link">Analysis and Pipelines</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-level="2"><a href="#btc-identifier-scheme" class="nav-link">BTC Identifier Scheme</a>
+            <li class="nav-item" data-bs-level="2"><a href="#btc-identifier-scheme" class="nav-link">BTC Identifier Scheme</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-level="2"><a href="#data-entities-and-levels" class="nav-link">Data Entities and Levels</a>
+            <li class="nav-item" data-bs-level="2"><a href="#data-entities-and-levels" class="nav-link">Data Entities and Levels</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-level="2"><a href="#clinical-data-levels-tiers" class="nav-link">Clinical Data Levels (Tiers)</a>
+            <li class="nav-item" data-bs-level="2"><a href="#clinical-data-levels-tiers" class="nav-link">Clinical Data Levels (Tiers)</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-level="2"><a href="#omic-data-levels" class="nav-link">Omic Data Levels</a>
+            <li class="nav-item" data-bs-level="2"><a href="#omic-data-levels" class="nav-link">Omic Data Levels</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-level="2"><a href="#external-data" class="nav-link">External Data</a>
+            <li class="nav-item" data-bs-level="2"><a href="#external-data" class="nav-link">External Data</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-level="2"><a href="#version-075" class="nav-link">Version 0.7.5</a>
+            <li class="nav-item" data-bs-level="2"><a href="#version-075" class="nav-link">Version 0.7.5</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -158,7 +162,7 @@
 </style>
 
 <h2 id="quick-documents-links">Quick Documents Links</h2>
-<p>| <a target=_blank href="https://breakthroughcancer.sharepoint.com/:b:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/Governance/Data_Science_Hub_Proposal.pdf?csf=1&web=1&e=HZNVZ6">BTC Data Science Hub Proposal</a> | <a target=_blank href="https://breakthroughcancer.sharepoint.com/:b:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/DataCoordinators/2024-01-22-DataCoord-Kickoff.pdf?csf=1&web=1&e=ujUORh">Data Coordinator Duties</a> | <a target=_blank href="https://breakthroughcancer.sharepoint.com/:w:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/DASH%20Data%20Submission%20Instructions/DASH-DataSubmission-Technical-Instructions-AWS-v0.7.docx?d=w862eb33d25ee4c51a4c962048fb66fd8&csf=1&web=1&e=dY6t6B">Technical Instructions on Staging Data</a> | <a target=_blank href="https://breakthroughcancer.sharepoint.com/:b:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/AWS-CLI-ConfigInstructions-TeamLabS3Access.pdf?csf=1&web=1&e=y4B2vc">How to Configure AWS CLI</a> |</p>
+<p>| <a target=_blank href="https://breakthroughcancer.sharepoint.com/:b:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/Governance/Data_Science_Hub_Proposal.pdf?csf=1&web=1&e=HZNVZ6">BTC Data Science Hub Proposal</a> | <a target=_blank href="https://breakthroughcancer.sharepoint.com/:b:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/DataCoordinators/2024-01-22-DataCoord-Kickoff.pdf?csf=1&web=1&e=ujUORh">Data Coordinator Duties</a> | <a target=_blank href="https://breakthroughcancer.sharepoint.com/:w:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/DASH%20Data%20Submission%20Instructions/DASH-DataSubmission-Technical-Instructions-AWS-v0.7.docx?d=w862eb33d25ee4c51a4c962048fb66fd8&csf=1&web=1&e=dY6t6B">Technical Instructions on Sharing Data</a> | <a target=_blank href="https://breakthroughcancer.sharepoint.com/:b:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/AWS-CLI-ConfigInstructions-TeamLabS3Access.pdf?csf=1&web=1&e=y4B2vc">How to Configure AWS CLI</a> |</p>
 <h2 id="btc-data-reference">BTC Data Reference</h2>
 <p>The aim of this page is to serve as a central point of reference for data handling in Break Through Cancer (BTC), capturing the consensus rubric under which data are generated, annotated, aggregated, governed, and accessed.  This includes metadata capture during patient enrollment and sample acquisition, standards and processes for molecular assay data generation and pipelines, data flow diagrams providing simplified views, as well as a FAQ for common questions.  In concert with BTC Disease TeamLabs, these
 norms are being codified by the Data Science TeamLab (DST) as a key element of the
@@ -353,8 +357,7 @@ including single-cell and single-nucleus RNA Seq (sc/snRNASeq), single-cell ATAC
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script src="js/jquery-3.6.0.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
         <script>
             var base_url = ".",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
@@ -367,7 +370,7 @@ including single-cell and single-nucleus RNA Seq (sc/snRNASeq), single-cell ATAC
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <p>From here you can search these documents. Enter your search terms below.</p>
@@ -387,7 +390,7 @@ including single-cell and single-nucleus RNA Seq (sc/snRNASeq), single-cell ATAC
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <table class="table">
@@ -427,9 +430,9 @@ including single-cell and single-nucleus RNA Seq (sc/snRNASeq), single-cell ATAC
 </html>
 
 <!--
-MkDocs version : 1.5.2
-Build Date UTC : 2025-03-27 11:31:31.695168+00:00
+MkDocs version : 1.6.1
+Build Date UTC : 2025-04-07 15:38:51.633672+00:00
 -->
 <center  style="font-size:.85em; color: #bababa; margin-top: -1.5em">
-2025_03_27_07:31:31
+2025_04_07_11:38:51
 </center>
