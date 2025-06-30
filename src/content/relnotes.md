@@ -7,6 +7,15 @@
 ## DASH Release Notes
 <hr>
 
+## **2025_06_30**
+As Q2 of 2025 concludes, we’re pleased to report accelerating momentum at the interface of data science and disease-focused translational efforts across the BTC network. Since January, data shared to [DASH](https://dash.breakthroughcancer.org)
+has surged 93% to 54 TB, now representing over 2,100 biospecimens (including external sources). This growth reflects increased harmonization of efforts across 8 TeamLabs and several clinical trials, supporting multiple publications and deepening the integrative potential of BTC’s research portfolio.
+
+A highlight of the quarter was the 2nd Annual BTC Hackathon, hosted June 9–10 by the Beroukhim Lab at the Broad Institute. With 67 participants spanning 7 TeamLabs, the event sparked wide-ranging technical creativity and seeded multiple ongoing collaborations. The winning team, Hack2Align, exemplified the collaborative BTC 
+![hackathon-2-winners](img/hackathon-2-winners.png)
+spirit: drawing on
+on the CODA/PIVOT tools originally developed within the DPT TeamLab, four imaging modalities from GBM TeamLab (H&E, Xenium, MALDI, CyCIF/ImF), and analytical expertise from Data Science TeamLab, they developed a prototype workflow for spatial co-registration across imaging modalities. Despite its early-stage nature, the pipeline achieved a surprisingly robust ~40-pixel alignment RMSE and shows potential for enabling more integrated, multimodal analyses across BTC’s spatially resolved datasets.
+
 ## **2025_03_27**
 Welcome to the first installment of DASH release notes in 2025! The Data Science
 Team (DST) closed 2024 with enormous progress and a strong sense of momentum across
