@@ -7,6 +7,27 @@
 ## DASH Release Notes
 <hr>
 
+## **2025_10_24**
+
+Progress in data science across the BTC portfolio in Q3 has been remarkable.  Notably, **recent publications
+highlight BTC investigator-led advances in computational analysis,** including:
+the [CloneSeq-SV](https://doi.org/10.1038/s41586-025-09580-0) method for tracking clonal evolution using cell-free DNA and single-cell WGS;
+the [MorphLink](https://doi.org/10.1038/s41467-025-61142-0) framework for co-analyzing cellular morphology and molecular dynamics in spatial omics;
+and a preprint describing the [ProteomeGenerator3](https://doi.org/10.1101/2025.08.23.671943) tool for integrated analysis of long-read transcriptomics and multi-dimensional proteomics.
+
+**Data shared to DASH has swelled to 58 TB, effectively doubling in 9 months** and spanning more than 1100 subjects and 12K samples, including external sources.  This expansion reflects increased harmonization across eight disease TeamLabs and several clinical trials, supporting a growing number of publications and enhancing BTC’s capacity for multi-modal discovery.
+
+**Finally, the DASH platform itself has also advanced significantly,** with a [faster and more unified portal interface](https://dash.breakthroughcancer.org)
+
+![new-DASH-landing-page](img/DASH2.png)
+that showcases major enhancements to existing applications and launches several new ones, including:
+
+- **PipeLand** &nbsp;&nbsp; graphically navigate analysis tools by data modality, with point-click pipeline execution in Cirro
+- **SCRP**  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; prototype for cross-institutional exploration of single cell RNAseq datasets per TeamLab
+- **WhoDat** &nbsp;&nbsp;&nbsp;&nbsp; easy way to search for BTC collaborators by name, institution, or TeamLab
+
+This update to the DASH ecosystem streamlines end-to-end scientific workflows while exposing a broader and richer set of metadata. **For most datasets, key metrics of accrued data are now visible across BTC** and can also be explored on a per-TeamLab basis in both summary form or more granular, study-specific views.
+
 ## **2025_06_30**
 As Q2 of 2025 concludes, we’re pleased to report accelerating momentum at the interface of data science and disease-focused translational efforts across the BTC network. Since January, data shared to [DASH](https://dash.breakthroughcancer.org)
 has surged 93% to 54 TB, now representing over 800 subjects and 2,100 biospecimens (including external sources).  This growth reflects increased harmonization across 8 TeamLabs and several clinical trials, supports multiple publications, and expands BTC’s capacity for integrated, multi-modal discovery.
