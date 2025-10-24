@@ -17,8 +17,7 @@ and a preprint describing the [ProteomeGenerator3](https://doi.org/10.1101/2025.
 
 **Data shared to DASH has swelled to 58 TB, effectively doubling in 9 months** and spanning more than 1100 subjects and 12K samples, including external sources.  This expansion reflects increased harmonization across eight disease TeamLabs and several clinical trials, supporting a growing number of publications and enhancing BTC’s capacity for multi-modal discovery.
 
-**Finally, the DASH platform itself has also advanced significantly,** with a [faster and more unified portal interface](https://dash.breakthroughcancer.org)
-
+**Finally, the DASH platform has also advanced significantly,** with a [faster and more unified portal interface](https://dash.breakthroughcancer.org)
 ![new-DASH-landing-page](img/DASH2.png)
 that showcases major enhancements to existing applications and launches several new ones, including:
 
