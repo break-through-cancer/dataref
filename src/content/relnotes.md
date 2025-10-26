@@ -15,7 +15,7 @@ the [CloneSeq-SV](https://doi.org/10.1038/s41586-025-09580-0) method for trackin
 the [MorphLink](https://doi.org/10.1038/s41467-025-61142-0) framework for co-analyzing cellular morphology and molecular dynamics in spatial omics;
 and a preprint describing the [ProteomeGenerator3](https://doi.org/10.1101/2025.08.23.671943) tool for integrated analysis of long-read transcriptomics and multi-dimensional proteomics.
 
-**Data shared to DASH has swelled to 58 TB, effectively doubling in 9 months** and spanning more than 1100 subjects and 12K samples, including external sources.  This expansion reflects increased harmonization across eight disease TeamLabs and several clinical trials, supporting a growing number of publications and enhancing BTC’s capacity for multi-modal discovery.
+**Data shared to DASH has swelled to 58 TB, effectively doubling in 9 months** and now spanning more than 1100 subjects and 12K samples.  Reflecting contributions from all active disease TeamLabs and several clinical studies, these data support numerous publications and continue to enhance BTC’s capacity for multi-modal discovery.
 
 **Finally, the DASH platform has also advanced significantly,** with a [faster and more unified portal interface](https://dash.breakthroughcancer.org)
 ![new-DASH-landing-page](img/DASH2.png)
