@@ -85,7 +85,7 @@ and may be downloaded interactively from the
 <a target="_blank" href="https://data.breakthroughcancer.org">data browser</a> <span style="color: grey;">*(temporarily disabled during AWS migration)*</span>
 ![dash-browse](img/dash-browse.png)
 or programmatically via
-<a href="https://aws.amazon.com/cli/" target="_blank" rel="noopener noreferrer">aws cli</a> for many, large files or pipelined analysis.
+<a target="_blank" href="https://aws.amazon.com/cli/" rel="noopener noreferrer">aws cli</a> for many, large files or pipelined analysis.
 Additional information is available in the
 <a target="#" href="https://breakthroughcancer.sharepoint.com/:b:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/DASH%20Data%20Submission%20Instructions/DASH-DataSubmission-Technical-Instructions-AWS-v0.7.pdf?csf=1&web=1&e=yBONKu">technical instructions (ver 0.7) for data sharing</a>. Finally, recall that staged data are offered "as is," while curated data will soon support more advanced use cases such as querying with 
 fine-grained parameters (e.g. gene name) or visual exploration in familiar tools like
