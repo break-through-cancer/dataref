@@ -53,9 +53,16 @@
     - Biospecimen and derivative clinical metadata I.e. Histologic Morphology Code, e.g. based on ICD-O-3
     - Coordinates for derivative biospecimen from their parent biospecimen
     - Processing of derivative biospecimen for downstream analysis e.g. dissociation, sectioning, analyte isolation 
-<br>
-<br>
-     This is adapted from [HTAN standards](https://humantumoratlas.org/standard/biospecimen) and is not intended
-	 to be mandatory constraints imposed by the DST upon clinical trial teams or disease team labs; we are in the
-	 process of defining the minimum viable set of clinical data elements (CDEs) for BTC projects.
 
+     This is adapted from [HTAN standards](https://humantumoratlas.org/standard/biospecimen) and is not intended
+	 to be mandatory constraints imposed by the DST upon clinical trial teams or disease team labs. As with most
+	 scientific projects, the set of metadata variables and clinical data elements (CDEs) collected for BTC projects
+	 is continuously evolving.
+
+8. **What is the BTC data governance and security framework?**
+
+	The [core principles of data governance in BTC are outlined here.](https://breakthroughcancer.sharepoint.com/:b:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/Governance/2022.01%20Ad%20hoc%20on%20Data%20Governance%20and%20Infrastructure.pdf?csf=1&web=1&e=OMGxBE)
+
+	The BTC [data security framework is given here.](https://breakthroughcancer.sharepoint.com/:b:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/Governance/BTC%20Data%20and%20Information%20Security_Draft-v0.9.pdf?csf=1&web=1&e=ZqpBQF)
+
+	And the [general security posture of the Cirro analysis platform used within DASH is described here.](https://trust.cirro.bio/)
