@@ -7,6 +7,17 @@
 ## DASH Release Notes
 <hr>
 
+## **2026_04_01**
+
+As Q1 2026 concludes, **[DASH now contains 100TB of data](https://dash.breakthroughcancer.org/board)—marking an important milestone for BTC!**
+This is a testament to the commitment of all TeamLabs and bodes well for future scientific collaborations.  **A slew of recent manuscripts by data science and disease team investigators** focus on *[genomic instability during double-strand break repair](https://www.pnas.org/doi/abs/10.1073/pnas.2504584123)* and *[tumor evolution under therapeutic selection](https://www.biorxiv.org/content/10.1101/2025.02.01.636056v2)*, extending into tissue organization and function through *[immune hubs remodeled by immunotherapy](https://www.biorxiv.org/content/10.64898/2026.02.10.703136v1)* and *[reconstruction of cellular profiles from transcriptomic imaging](https://www.biorxiv.org/content/10.64898/2026.03.08.710395v1)*.
+
+Making sense of these complementary efforts highlights the **need for integrative analytical frameworks and has motivated the development of STAPLE** to unify multimodal spatial transcriptomics within a single end-to-end pipeline. Now submitted for publication and [in production for all BTC TeamLabs, STAPLE](https://dash.breakthroughcancer.org/pipeland/?search=staple) is also the **first spatial transcriptomics workflow to natively integrate AI-driven interpretation across its entire toolchain,** converting fragmented intermediate results into coherent, literature-grounded biological understanding while significantly reducing manual synthesis and accelerating time-to-insight.
+
+On the applications front, **[Browse](https://dash.breakthroughcancer.org/browse) now exposes additional metadata columns** (where available), making it easier to search by attributes like species (e.g. human vs. canine), sequence coverage (depth), or libraries (e.g. TCR or GEX to distinguish scRNA-seq modalities). Finally, our **[new Support app](https://dash.breakthroughcancer.org/support) is now in beta,** making it easy to request and track help—or initiate collaborations—across scientific, engineering, and data work.
+
+![DASH-support-APP](img/dash-support.png)
+
 ## **2025_10_24**
 
 Progress in data science across the BTC portfolio in Q3 has been remarkable.  Notably, **recent publications
