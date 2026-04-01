@@ -15,7 +15,6 @@ This is a testament to the commitment of all TeamLabs and bodes well for future 
 Making sense of these complementary efforts highlights the **need for integrative analytical frameworks and has motivated the development of STAPLE** to unify multimodal spatial transcriptomics within a single end-to-end pipeline. Now submitted for publication and [in production for all BTC TeamLabs, STAPLE](https://dash.breakthroughcancer.org/pipeland/?search=staple) is also the **first spatial transcriptomics workflow to natively integrate AI-driven interpretation across its entire toolchain,** converting fragmented intermediate results into coherent, literature-grounded biological understanding while significantly reducing manual synthesis and accelerating time-to-insight.
 
 On the applications front, **[Browse](https://dash.breakthroughcancer.org/browse) now exposes additional metadata columns** (where available), making it easier to search by attributes like species (e.g. human vs. canine), sequence coverage (depth), or libraries (e.g. TCR or GEX to distinguish scRNA-seq modalities). Finally, our **[new Support app](https://dash.breakthroughcancer.org/support) is now in beta,** making it easy to request and track help—or initiate collaborations—across scientific, engineering, and data work.
-
 ![DASH-support-APP](img/dash-support.png)
 
 ## **2025_10_24**
