@@ -21,7 +21,7 @@ NIH guidelines</a>
 [HTAN](https://data.humantumoratlas.org),
 <a target=_blank href="https://gdc.cancer.gov">GDC</a>, and
 <a target=_blank href="http://cancergenome.nih.gov">TCGA</a>
-To learn more about [data security and governance in DASH, see this entry in the FAQ](faq/#governance-security)
+To learn more about [data security and governance in DASH, see this entry in the FAQ](faq/#governance-security).
 ## Data Life Cycle
 ---
 ![data-life-cycle](img/data-life-cycle.png)
@@ -218,7 +218,7 @@ but should not be interpreted as a claim that BTC now “owns” or is attemptin
 ## Data Security
 ---
 
-To learn more about [data security and governance in DASH, see this entry in the FAQ](faq/#governance-security)
+To learn more about [data security and governance in DASH, see this entry in the FAQ](faq/#governance-security).
 
 ## Version 0.7.6
 
