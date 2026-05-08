@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo "No longer supported, see serve: in src/Makefile as better alternative"
+exit 3
+
 # Simple script to support local viewing of docs prior to # Git commit,
 # push and deployment.  On a Mac will also auto-open browser window.
 

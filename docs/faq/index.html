@@ -150,9 +150,11 @@ gathering/engineering, or provide analytic insight and/or assist with interpreta
 </li>
 <li>
 <p><strong>What is the BTC data governance and security framework?</strong></p>
-<p>The <a href="https://breakthroughcancer.sharepoint.com/:b:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/Governance/2022.01%20Ad%20hoc%20on%20Data%20Governance%20and%20Infrastructure.pdf?csf=1&amp;web=1&amp;e=OMGxBE">core principles of data governance in BTC are outlined here.</a></p>
-<p>The BTC <a href="https://breakthroughcancer.sharepoint.com/:b:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/Governance/BTC%20Data%20and%20Information%20Security_Draft-v0.9.pdf?csf=1&amp;web=1&amp;e=ZqpBQF">data security framework is given here.</a></p>
-<p>And the <a href="https://trust.cirro.bio/">general security posture of the Cirro analysis platform used within DASH is described here.</a></p>
+<p><a id="governance-security"></a></p>
+<p>The <a href="https://breakthroughcancer.sharepoint.com/:b:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/Governance/2022.01%20Ad%20hoc%20on%20Data%20Governance%20and%20Infrastructure.pdf?csf=1&amp;web=1&amp;e=OMGxBE">core principles of data governance in BTC are outlined here</a> and the general BTC <a href="https://breakthroughcancer.sharepoint.com/:b:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/Governance/BTC%20Data%20and%20Information%20Security_Draft-v0.9.pdf?csf=1&amp;web=1&amp;e=ZqpBQF">data security framework is given here.</a>
+Data ingested to DASH are encrypted both in transit and at rest, and stored within a dedicated secure AWS environment. Data are accessible either through access-controlled S3 storage or through project workspaces in <a href="https://cirro.bio">Cirro</a>. Cirro maintains SOC 2 Type II, NIST 800-171, and HIPAA compliance documentation available at <a href="https://trust.cirro.bio">https://trust.cirro.bio</a>.</p>
+<p>Access to DASH is governed through Microsoft Entra ID group- and role-based access controls (ACLs), which are subject to ongoing review by Break Through Cancer through a formal request/approval process. These controls integrate with centralized SSO authentication and restrict access to TeamLab-specific data to authorized users only. Authentication is additionally protected through multi-factor authentication (MFA) and security practices are aligned with the NIST Cybersecurity Framework (CSF 2.0).</p>
+<p>DASH is intended to store only data that have been reviewed to exclude PHI and other restricted or encumbered content, supported by ongoing validation checks performed by the data engineering team. As described in the BTC Playbook, data are subject to an embargo period during which access is limited to the generating TeamLab. The BTC Programs Team maintains dataset tracking and metadata records to support discoverability and attribution across disease TeamLabs.</p>
 </li>
 </ol></div>
             </div>
@@ -235,5 +237,5 @@ gathering/engineering, or provide analytic insight and/or assist with interpreta
     </body>
 </html>
 <center  style="font-size:.85em; color: #bababa; margin-top: -1.5em">
-2026_04_01_15:25:18
+2026_05_08_10:56:43
 </center>

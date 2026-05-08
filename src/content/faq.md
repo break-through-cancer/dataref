@@ -59,10 +59,16 @@
 	 scientific projects, the set of metadata variables and clinical data elements (CDEs) collected for BTC projects
 	 is continuously evolving.
 
+
 8. **What is the BTC data governance and security framework?**
 
-	The [core principles of data governance in BTC are outlined here.](https://breakthroughcancer.sharepoint.com/:b:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/Governance/2022.01%20Ad%20hoc%20on%20Data%20Governance%20and%20Infrastructure.pdf?csf=1&web=1&e=OMGxBE)
+	<a id="governance-security"></a>
 
-	The BTC [data security framework is given here.](https://breakthroughcancer.sharepoint.com/:b:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/Governance/BTC%20Data%20and%20Information%20Security_Draft-v0.9.pdf?csf=1&web=1&e=ZqpBQF)
+	The [core principles of data governance in BTC are outlined here](https://breakthroughcancer.sharepoint.com/:b:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/Governance/2022.01%20Ad%20hoc%20on%20Data%20Governance%20and%20Infrastructure.pdf?csf=1&web=1&e=OMGxBE) and the general BTC [data security framework is given here.](https://breakthroughcancer.sharepoint.com/:b:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/Governance/BTC%20Data%20and%20Information%20Security_Draft-v0.9.pdf?csf=1&web=1&e=ZqpBQF)
+	Data ingested to DASH are encrypted both in transit and at rest, and stored within a dedicated secure AWS environment. Data are accessible either through access-controlled S3 storage or through project workspaces in [Cirro](https://cirro.bio). Cirro maintains SOC 2 Type II, NIST 800-171, and HIPAA compliance documentation available at <https://trust.cirro.bio>.
 
-	And the [general security posture of the Cirro analysis platform used within DASH is described here.](https://trust.cirro.bio/)
+	Access to DASH is governed through Microsoft Entra ID group- and role-based access controls (ACLs), which are subject to ongoing review by Break Through Cancer through a formal request/approval process. These controls integrate with centralized SSO authentication and restrict access to TeamLab-specific data to authorized users only. Authentication is additionally protected through multi-factor authentication (MFA) and security practices are aligned with the NIST Cybersecurity Framework (CSF 2.0).
+
+	DASH is intended to store only data that have been reviewed to exclude PHI and other restricted or encumbered content, supported by ongoing validation checks performed by the data engineering team. As described in the BTC Playbook, data are subject to an embargo period during which access is limited to the generating TeamLab. The BTC Programs Team maintains dataset tracking and metadata records to support discoverability and attribution across disease TeamLabs.
+
+

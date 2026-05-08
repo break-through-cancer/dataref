@@ -19,5 +19,15 @@ build:
 setup:
 	pip install -r requirements.txt
 
+# The serve command provides a convenient way to inspect and validate the
+# markdown content prior to production deployment, ensuring that look/feel
+# is appropriate, that cross-markdown (and external) links work properly,
+# and so forth.  Must be run at root of tree, where mkdocs.yml lives.
+serve:
+	mkdocs serve
+
+inspect: serve
+validate: serve
+
 clean:
 	$(RM) -r $(SITE_DIR) *~ */*~
