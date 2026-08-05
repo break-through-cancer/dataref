@@ -50,7 +50,7 @@ When data are ready to be shared/analyzed via DASH, please contact the data coor
 - MIT: [Charles Demurjian](mailto:cdemu@mit.edu) (PI: Stuart Levine) <BR>
 - Johns Hopkins: [Meredith Wetzel](mailto:mwetzel7@jhu.edu) (PI: Elana Fertig) <BR>
 - Memorial Sloan Kettering: [Eli Havasov](mailto:havasove@mskcc.org) (PI: Sohrab Shah) <BR>
-- Dana Farber:  [Siri Palreddy](mailto:siri_palreddy@dfci.harvard.edu) (PI: Rameen Beroukhim)
+- Dana Farber:  [Annabel Wallace](mailto:annabel_wallace@dfci.harvard.edu) (PI: Rameen Beroukhim)
 
 The
 <a target="#" href="https://breakthroughcancer.sharepoint.com/:b:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/DataCoordinators/2024-01-22-DataCoord-Kickoff.pdf?csf=1&web=1&e=ujUORh">role of the BTC data coordinator is described here</a>.
