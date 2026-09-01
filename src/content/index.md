@@ -50,7 +50,7 @@ When data are ready to be shared/analyzed via DASH, please contact the data coor
 - MIT: [Charles Demurjian](mailto:cdemu@mit.edu) (PI: Stuart Levine) <BR>
 - Johns Hopkins: [Meredith Wetzel](mailto:mwetzel7@jhu.edu) (PI: Elana Fertig) <BR>
 - Memorial Sloan Kettering: [Eli Havasov](mailto:havasove@mskcc.org) (PI: Sohrab Shah) <BR>
-- Dana Farber:  [Annabel Wallace](mailto:annabel_wallace@dfci.harvard.edu) (PI: Rameen Beroukhim)
+- Dana Farber:  [Siri Palreddy](mailto:siri_palreddy@dfci.harvard.edu) (PI: Rameen Beroukhim)
 
 The
 <a target="#" href="https://breakthroughcancer.sharepoint.com/:b:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/DataCoordinators/2024-01-22-DataCoord-Kickoff.pdf?csf=1&web=1&e=ujUORh">role of the BTC data coordinator is described here</a>.
@@ -215,10 +215,18 @@ In the latter case of external data being assigned BTC IDs, a unique study name 
 
 but should not be interpreted as a claim that BTC now “owns” or is attempting to “re-brand” those external data.
 
-## Data Security
+## Data Security and Governance
 ---
 
-To learn more about [data security and governance in DASH, see this entry in the FAQ](faq/#governance-security).
 
-## Version 0.7.6
+Data ingested to DASH are encrypted both in transit and at rest, and stored within a dedicated secure AWS environment. Data are accessible either through access-controlled S3 storage or through project workspaces in [Cirro](https://cirro.bio). Cirro maintains SOC 2 Type II, NIST 800-171, and HIPAA compliance documentation at <https://trust.cirro.bio>.
+
+Access to DASH is governed through Microsoft Entra ID group- and role-based access controls (ACLs), which are subject to ongoing review by Break Through Cancer through a formal request/approval process. These controls integrate with centralized SSO authentication and restrict access to TeamLab-specific data to authorized users only. Authentication is additionally protected through multi-factor authentication (MFA) and security practices are aligned with the NIST Cybersecurity Framework (CSF 2.0).
+
+
+**DASH is intended to store only unencumbered, PHI-free data.** Investigators are responsible for resolving encumbrances and scrubbing PHI before sharing data to DASH; the BTC data engineering team will periodically run PHI-detection scans as a precautionary backstop.  As described in the BTC Playbook, data are subject to an embargo period during which access is limited to the generating TeamLab. The BTC Programs Team maintains dataset tracking and metadata records to support discoverability and attribution across disease TeamLabs.
+
+The [founding principles of data governance in BTC are outlined here](https://breakthroughcancer.sharepoint.com/:b:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/Governance/2022.01%20Ad%20hoc%20on%20Data%20Governance%20and%20Infrastructure.pdf?csf=1&web=1&e=OMGxBE) and the general BTC [data security framework is given here.](https://breakthroughcancer.sharepoint.com/:b:/r/sites/TeamLab-BreakThroughCancerInformation/Shared%20Documents/DataScience/Governance/BTC%20Data%20and%20Information%20Security_Draft-v0.9.pdf?csf=1&web=1&e=ZqpBQF)
+
+## Version 0.7.7
 
